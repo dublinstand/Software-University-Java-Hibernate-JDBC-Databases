@@ -25,7 +25,7 @@
         <module name="03_Introduction-To-Hibernate" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="03_Introduction-To-Hibernate" target="1.5" />
     </bytecodeTargetLevel>
   </component>
