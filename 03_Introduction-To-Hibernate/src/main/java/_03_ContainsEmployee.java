@@ -28,6 +28,17 @@ public class _03_ContainsEmployee {
         Query getAllTowns = entityManager.createQuery("SELECT e FROM Employee AS e");
         List<Employee> employees = getAllTowns.getResultList();
 
+        for (Employee employee : employees) {
+            if (employee.getFirstName().equals(firstName) && employee.getLastName().equals(lastName)) {
+                isInDatabase = true;
+            }
+        }
+
+        if (isInDatabase) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
 
 
         //we commit all objects that we have persisted and then close all connections

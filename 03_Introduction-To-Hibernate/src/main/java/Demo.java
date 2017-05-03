@@ -9,8 +9,6 @@ public class Demo {
         EntityManager entityManager = emf.createEntityManager();
         entityManager.getTransaction().begin();
 
-
-
         entityManager.getTransaction().commit();
         entityManager.close();
         emf.close();
