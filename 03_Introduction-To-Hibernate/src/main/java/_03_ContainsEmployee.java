@@ -25,6 +25,7 @@ public class _03_ContainsEmployee {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         entityManager.getTransaction().begin();
 
+        //We return e from Employees and we return a List<Employee>
         Query getAllTowns = entityManager.createQuery("SELECT e FROM Employee AS e");
         List<Employee> employees = getAllTowns.getResultList();
 
