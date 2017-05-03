@@ -42,7 +42,7 @@ public class _02_RemoveObjects {
         Query jpqlQuery = entityManager.createQuery("SELECT t FROM Town AS t WHERE LENGTH(t.name) > 11");
 
         //here we have the first 5 lines returned
-        List<Town> towns2 = jpqlQuery.getResultList();
+        List<Town> towns2 = jpqlQuery.setMaxResults(5).getResultList();
         for (Town town : towns2){
             town.setName(town.getName().toLowerCase());
 
