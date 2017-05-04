@@ -26,7 +26,7 @@ public class _10_FindEmployeesByFirstName {
         for (Employee employee : employees){
             System.out.printf("Name: %s %s - %s - ($%s)\n", employee.getFirstName(), employee.getLastName(), employee.getJobTitle(), employee.getSalary().setScale(2).toPlainString());
         }
-        
+
         //we commit all objects that we have persisted and then close all connections
         entityManager.getTransaction().commit();
         entityManager.close();
