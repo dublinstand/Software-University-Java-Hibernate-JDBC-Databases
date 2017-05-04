@@ -17,23 +17,23 @@ public class _02_RemoveObjects {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         entityManager.getTransaction().begin();
 
-//        //Native Query
-//        //create a Native Query that is using the SQL syntax
-//        Query nativeQuery = entityManager.createNativeQuery("SELECT * FROM towns AS t WHERE LENGTH(t.name) > 5");
-//        //get the result of the native query as a List and return it as an Object array
-//        //because the query can not link it to our Town.class entity
-//        List<Object[]> towns = nativeQuery.getResultList();
-//
-//        //it is done this way because we use Native Query
-//        for (Object[] object : towns){
-//            //we cast the first row of the object which is the Primary Key to Integer
-//            int primaryKey = (Integer) object[0];
-//            //we find the town with the id in the object returned
-//            Town town = entityManager.find(Town.class, primaryKey);
-//            //use detach to remove it from the database
-//            entityManager.detach(town);
-//            System.out.println(town.getName());
-//        }
+        //Native Query
+        //create a Native Query that is using the SQL syntax
+        Query nativeQuery = entityManager.createNativeQuery("SELECT * FROM towns AS t WHERE LENGTH(t.name) > 5");
+        //get the result of the native query as a List and return it as an Object array
+        //because the query can not link it to our Town.class entity
+        List<Object[]> towns = nativeQuery.getResultList();
+
+        //it is done this way because we use Native Query
+        for (Object[] object : towns){
+            //we cast the first row of the object which is the Primary Key to Integer
+            int primaryKey = (Integer) object[0];
+            //we find the town with the id in the object returned
+            Town town = entityManager.find(Town.class, primaryKey);
+            //use detach to remove it from the database
+            entityManager.detach(town);
+            System.out.println(town.getName());
+        }
 
 
         //Use Create Query - JPQL - Java Persist Query Language
