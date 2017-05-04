@@ -19,7 +19,6 @@ public class _06_AddingNewAddressAndUpdatingEmployee {
         Town town = entityManager.find(Town.class, 33);
         address.setTown(town);
 
-
         //We getSingleResult as an object and cast it to Employee
         Employee employee = (Employee) entityManager.createQuery("SELECT e FROM Employee AS e WHERE e.lastName = 'Nakov'").getSingleResult();
         employee.setAddressId(address);
