@@ -25,6 +25,7 @@ public class _08_IncreaseSalaries {
         List<Employee> employees = query.getResultList();
 
         for (Employee employee : employees){
+            //using Big Decimal to add and multiply the salary by 0.12
             employee.setSalary(employee.getSalary().add(employee.getSalary().multiply(new BigDecimal(0.12))));
             System.out.println(employee.getFirstName() + " " + employee.getLastName() + " " +employee.getSalary());
         }

@@ -58,11 +58,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_09_RemoveTowns.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_09_RemoveTowns.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/_09_RemoveTowns.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
+            <state relative-caret-position="330">
+              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_10_FindEmployeesByFirstName.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/_10_FindEmployeesByFirstName.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -81,8 +91,8 @@
       <file leaf-file-name="_08_IncreaseSalaries.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/_08_IncreaseSalaries.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+            <state relative-caret-position="286">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -150,8 +160,9 @@
         <option value="$PROJECT_DIR$/src/main/java/_01_CreateObjects.java" />
         <option value="$PROJECT_DIR$/src/main/java/_07_DatabaseSearchQueries.java" />
         <option value="$PROJECT_DIR$/src/main/java/_02_RemoveObjects.java" />
-        <option value="$PROJECT_DIR$/src/main/java/_08_IncreaseSalaries.java" />
         <option value="$PROJECT_DIR$/src/main/java/_09_RemoveTowns.java" />
+        <option value="$PROJECT_DIR$/src/main/java/_08_IncreaseSalaries.java" />
+        <option value="$PROJECT_DIR$/src/main/java/_10_FindEmployeesByFirstName.java" />
       </list>
     </option>
   </component>
@@ -323,22 +334,7 @@
       <recent name="D:\training\SoftUni\Java\Java-Hibernate-JDBC-Databases\03_Introduction-To-Hibernate\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._09_RemoveTowns">
-    <configuration default="false" name="_06_AddingNewAddressAndUpdatingEmployee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="_06_AddingNewAddressAndUpdatingEmployee" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="03_Introduction-To-Hibernate" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application._10_FindEmployeesByFirstName">
     <configuration default="false" name="_07_DatabaseSearchQueries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="_07_DatabaseSearchQueries" />
@@ -387,6 +383,21 @@
     <configuration default="false" name="_09_RemoveTowns" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="_09_RemoveTowns" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="03_Introduction-To-Hibernate" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="_10_FindEmployeesByFirstName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="_10_FindEmployeesByFirstName" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -663,19 +674,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application._06_AddingNewAddressAndUpdatingEmployee" />
-      <item index="1" class="java.lang.String" itemvalue="Application._07_DatabaseSearchQueries" />
-      <item index="2" class="java.lang.String" itemvalue="Application._01_CreateObjects" />
-      <item index="3" class="java.lang.String" itemvalue="Application._08_IncreaseSalaries" />
-      <item index="4" class="java.lang.String" itemvalue="Application._09_RemoveTowns" />
+      <item index="0" class="java.lang.String" itemvalue="Application._07_DatabaseSearchQueries" />
+      <item index="1" class="java.lang.String" itemvalue="Application._01_CreateObjects" />
+      <item index="2" class="java.lang.String" itemvalue="Application._08_IncreaseSalaries" />
+      <item index="3" class="java.lang.String" itemvalue="Application._09_RemoveTowns" />
+      <item index="4" class="java.lang.String" itemvalue="Application._10_FindEmployeesByFirstName" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application._09_RemoveTowns" />
-        <item index="1" class="java.lang.String" itemvalue="Application._08_IncreaseSalaries" />
-        <item index="2" class="java.lang.String" itemvalue="Application._07_DatabaseSearchQueries" />
-        <item index="3" class="java.lang.String" itemvalue="Application._01_CreateObjects" />
-        <item index="4" class="java.lang.String" itemvalue="Application._06_AddingNewAddressAndUpdatingEmployee" />
+        <item index="0" class="java.lang.String" itemvalue="Application._10_FindEmployeesByFirstName" />
+        <item index="1" class="java.lang.String" itemvalue="Application._09_RemoveTowns" />
+        <item index="2" class="java.lang.String" itemvalue="Application._08_IncreaseSalaries" />
+        <item index="3" class="java.lang.String" itemvalue="Application._07_DatabaseSearchQueries" />
+        <item index="4" class="java.lang.String" itemvalue="Application._01_CreateObjects" />
       </list>
     </recent_temporary>
   </component>
@@ -698,13 +709,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.41673782" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.40649018" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972974" sideWeight="0.5807003" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972974" sideWeight="0.5909479" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972974" sideWeight="0.41929975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972974" sideWeight="0.4090521" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -796,7 +807,7 @@
         <state relative-caret-position="198">
           <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -863,7 +874,7 @@
         <state relative-caret-position="371">
           <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -906,16 +917,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/_08_IncreaseSalaries.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        <state relative-caret-position="286">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/_09_RemoveTowns.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
+        <state relative-caret-position="330">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/_10_FindEmployeesByFirstName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
           <folding />
         </state>
       </provider>
