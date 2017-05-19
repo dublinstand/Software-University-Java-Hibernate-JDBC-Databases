@@ -1,4 +1,4 @@
-package com.softuni._hibernatecodefirst;
+package com.softuni._hibernatecodefirst.terminal;
 
 
 import com.softuni._hibernatecodefirst.entities.WizardDeposit;

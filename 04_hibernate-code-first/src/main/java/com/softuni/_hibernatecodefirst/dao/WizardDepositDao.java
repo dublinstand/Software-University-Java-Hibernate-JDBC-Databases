@@ -1,4 +1,4 @@
-package com.softuni._hibernatecodefirst.repository;
+package com.softuni._hibernatecodefirst.dao;
 
 
 import com.softuni._hibernatecodefirst.entities.WizardDeposit;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface WizardDepositRepository extends JpaRepository<WizardDeposit, Long> {
+public interface WizardDepositDao extends JpaRepository<WizardDeposit, Long> {
 
     @Override
     @Query("SELECT wd FROM WizardDeposit AS wd WHERE wd.isDepositExpired=false")
