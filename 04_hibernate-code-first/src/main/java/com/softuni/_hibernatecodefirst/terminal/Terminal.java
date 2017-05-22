@@ -1,18 +1,19 @@
 package com.softuni._hibernatecodefirst.terminal;
 
 
-import com.softuni._hibernatecodefirst.entities.User;
-import com.softuni._hibernatecodefirst.entities.WizardDeposit;
-import com.softuni._hibernatecodefirst.services.UserService;
-import com.softuni._hibernatecodefirst.services.WizardDepositService;
+import com.softuni._hibernatecodefirst.entities.*;
+import com.softuni._hibernatecodefirst.services.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
 
 @Component
@@ -21,14 +22,35 @@ public class Terminal implements CommandLineRunner {
     @Autowired
     private  WizardDepositService wizardDepositService;
 
+
+
     @Autowired
     private UserService userService;
+
+
+
+    @Autowired
+    private CommentService commentService;
+
+    @Autowired
+    private DiagnoseService diagnoseService;
+
+    @Autowired
+    private MedicamentService medicamentService;
+
+    @Autowired
+    private PatientService patientService;
+
+    @Autowired
+    private VisitationService visitationService;
 
     public Terminal() {
     }
 
     @Override
     public void run(String... strings) throws Exception {
+
+        //First Task - Wizards
         WizardDeposit wd = new WizardDeposit();
         wd.setFirstName("Albus");
         wd.setLastName("Dumbledore");
@@ -47,7 +69,7 @@ public class Terminal implements CommandLineRunner {
 
         wizardDepositService.persist(wd);
 
-        //second task, create a user in the users table
+        //Second task, create a user in the users table
         User user = new User();
         user.setUsername("bulgIYI");
         user.setEmail("bulg@abv.bg");
@@ -92,5 +114,47 @@ public class Terminal implements CommandLineRunner {
 
         int count = userService.countByProfilePictureGreaterThan(new byte[5]);
         System.out.println(count);
+
+
+        //Third Task - Hospital (Comment, Diagnose, Medicament, Patient, Visitation)
+        Patient patient = new Patient();
+        patient.setFirstName("Johny");
+        patient.setLastName("Bravo");
+        patient.setEmail("email@abv.bg");
+        patient.setHasMedicalInsurance(true);
+        patient.setDateOfBirth(new Date());
+        this.patientService.create(patient);
+
+        Visitation visitation = new Visitation();
+        visitation.setDate(new Date());
+        visitation.setPatient(patient);
+        this.visitationService.create(visitation);
+
+        Diagnose diagnose = new Diagnose();
+        diagnose.setName("Cold");
+        diagnose.setPatient(patient);
+        this.diagnoseService.create(diagnose);
+
+
+        Comment comment = new Comment();
+        comment.setVisitation(visitation);
+        comment.setText("Healthy Comment");
+        comment.setDiagnose(diagnose);
+        this.commentService.create(comment);
+
+        Medicament medicament = new Medicament();
+        medicament.setName("Aspirin");
+        medicament.setPatients(new HashSet<>());
+        medicament.getPatients().add(patient);
+        this.medicamentService.create(medicament);
+
+        //we can pass the id in the console and get the patient from the database
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String line;
+        while(!(line = bufferedReader.readLine()).equals("Stop")){
+            long id = Long.parseLong(line);
+            Patient p = this.patientService.retrieve(id);
+            System.out.println(p.toString());
+        }
     }
 }
