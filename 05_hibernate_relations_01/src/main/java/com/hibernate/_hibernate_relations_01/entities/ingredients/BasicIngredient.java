@@ -1,8 +1,12 @@
 package com.hibernate._hibernate_relations_01.entities.ingredients;
 
 
+import com.hibernate._hibernate_relations_01.entities.shampoos.BasicShampoo;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.HashSet;
+import java.util.Set;
 
 //we use single table strategy - @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 //in @DiscriminatorColumn we say which column is unique for its inheritors
@@ -27,10 +31,14 @@ public abstract class BasicIngredient implements Ingredient {
     @Column(name = "price")
     private BigDecimal price;
 
+    private Set<BasicShampoo> shampoos;
+
 
     //because the class is abstract, its constructors must be protected - means they can be only used
     //by their inheritors
+    //this way we initialize the Set<BasicShampoo>
     protected BasicIngredient() {
+        this.setShampoos(new HashSet<>());
     }
 
     //because the class is abstract, its constructors must be protected - means they can be only used
@@ -38,6 +46,10 @@ public abstract class BasicIngredient implements Ingredient {
     protected BasicIngredient(String name, BigDecimal price){
         this.name = name;
         this.price = price;
+    }
+
+    public void addBasicShampoo(BasicShampoo basicShampoo){
+        this.getShampoos().add(basicShampoo);
     }
 
     @Override
@@ -68,5 +80,15 @@ public abstract class BasicIngredient implements Ingredient {
     @Override
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    @Override
+    public Set<BasicShampoo> getShampoos() {
+        return this.shampoos;
+    }
+
+    @Override
+    public void setShampoos(Set<BasicShampoo> shampoos) {
+        this.shampoos = shampoos;
     }
 }
