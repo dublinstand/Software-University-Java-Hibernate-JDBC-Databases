@@ -20,7 +20,7 @@ public class ClassicLabel implements Label {
     private String subtitle;
 
     //if we want in the labels to have a two way connection with BasicShampoo
-    @OneToOne(mappedBy = "classicLabel", targetEntity = BasicShampoo.class)
+    @OneToOne(mappedBy = "label", targetEntity = BasicShampoo.class)
     private BasicShampoo basicShampoo;
 
     public ClassicLabel() {
@@ -33,31 +33,39 @@ public class ClassicLabel implements Label {
 
     @Override
     public long getId() {
-        return 0;
+        return id;
     }
 
     @Override
     public void setId(long id) {
-
+        this.id = id;
     }
 
     @Override
     public String getTitle() {
-        return null;
+        return title;
     }
 
     @Override
     public void setTitle(String title) {
-
+        this.title = title;
     }
 
     @Override
     public String getSubtitle() {
-        return null;
+        return subtitle;
     }
 
     @Override
-    public void setSubtitle(String subTitle) {
+    public void setSubtitle(String subtitle) {
+        this.subtitle = subtitle;
+    }
 
+    public BasicShampoo getBasicShampoo() {
+        return basicShampoo;
+    }
+
+    public void setBasicShampoo(BasicShampoo basicShampoo) {
+        this.basicShampoo = basicShampoo;
     }
 }

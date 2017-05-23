@@ -31,6 +31,9 @@ public abstract class BasicIngredient implements Ingredient {
     @Column(name = "price")
     private BigDecimal price;
 
+    //in order to have two way relation
+    //we map the set shampoos to BasicShampoo and its field ingredients
+    @ManyToMany(mappedBy = "ingredients")
     private Set<BasicShampoo> shampoos;
 
 
