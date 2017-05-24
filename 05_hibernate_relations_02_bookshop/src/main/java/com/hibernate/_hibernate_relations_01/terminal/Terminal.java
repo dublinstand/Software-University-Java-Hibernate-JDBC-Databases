@@ -114,9 +114,7 @@ public class Terminal implements CommandLineRunner{
             book.setPrice(price);
             book.setAgeRestriction(ageRestriction);
             book.setTitle(title);
-
             bookService.create(book);
-
         }
     }
 }

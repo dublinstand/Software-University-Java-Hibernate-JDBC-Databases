@@ -2,6 +2,7 @@ package com.hibernate._hibernate_relations_01.domain;
 
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -23,6 +24,7 @@ public class Category {
     Set<Book> books;
 
     public Category() {
+        this.setBooks(new HashSet<>());
     }
 
     public long getId() {
@@ -39,5 +41,13 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Set<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(Set<Book> books) {
+        this.books = books;
     }
 }
