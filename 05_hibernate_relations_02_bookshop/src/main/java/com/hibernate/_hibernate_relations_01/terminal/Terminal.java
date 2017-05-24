@@ -114,6 +114,12 @@ public class Terminal implements CommandLineRunner{
             book.setPrice(price);
             book.setAgeRestriction(ageRestriction);
             book.setTitle(title);
+
+            int categoryIndex = random.nextInt(categories.size());
+            Category category = categories.get(categoryIndex);
+
+            book.addCategory(category);
+
             bookService.create(book);
         }
     }

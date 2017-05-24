@@ -6,6 +6,7 @@ import com.hibernate._hibernate_relations_01.domain.enums.EditionType;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -48,8 +49,8 @@ public class Book {
     private Set<Category> categories;
 
 
-
     public Book() {
+        this.setCategories(new HashSet<>());
     }
 
     public long getId() {
@@ -131,4 +132,10 @@ public class Book {
     public void setCategories(Set<Category> categories) {
         this.categories = categories;
     }
+
+    public void addCategory (Category category){
+        this.getCategories().add(category);
+    }
+
+
 }
