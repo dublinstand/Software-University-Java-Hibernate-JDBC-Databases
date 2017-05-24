@@ -6,6 +6,7 @@ import com.hibernate._hibernate_relations_01.domain.enums.EditionType;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.Set;
 
 @Entity
 @Table(name = "books")
@@ -42,6 +43,11 @@ public class Book {
     @Enumerated(EnumType.STRING)
     @Column(name = "age_restriction")
     private AgeRestriction ageRestriction;
+
+    @ManyToMany(mappedBy = "books")
+    private Set<Category> categories;
+
+
 
     public Book() {
     }
@@ -116,5 +122,13 @@ public class Book {
 
     public void setAgeRestriction(AgeRestriction ageRestriction) {
         this.ageRestriction = ageRestriction;
+    }
+
+    public Set<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(Set<Category> categories) {
+        this.categories = categories;
     }
 }
