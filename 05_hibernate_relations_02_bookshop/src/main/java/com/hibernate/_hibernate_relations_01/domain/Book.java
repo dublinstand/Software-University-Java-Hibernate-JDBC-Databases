@@ -45,7 +45,10 @@ public class Book {
     @Column(name = "age_restriction")
     private AgeRestriction ageRestriction;
 
-    @ManyToMany(mappedBy = "books")
+    @ManyToMany
+    @JoinTable(name = "books_categories",
+            joinColumns = @JoinColumn(name = "book_id"),
+            inverseJoinColumns = @JoinColumn(name = "category_id"))
     private Set<Category> categories;
 
 

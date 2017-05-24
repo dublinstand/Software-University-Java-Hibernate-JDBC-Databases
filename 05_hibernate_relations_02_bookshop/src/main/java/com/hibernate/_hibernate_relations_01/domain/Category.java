@@ -17,10 +17,7 @@ public class Category {
     @Basic
     private String name;
 
-    @ManyToMany
-    @JoinTable(name = "books_categories",
-            joinColumns = @JoinColumn(name = "category_id", referencedColumnName = "category_id"),
-            inverseJoinColumns = @JoinColumn(name = "book_id", referencedColumnName = "book_id"))
+    @ManyToMany(mappedBy = "categories")
     Set<Book> books;
 
     public Category() {
