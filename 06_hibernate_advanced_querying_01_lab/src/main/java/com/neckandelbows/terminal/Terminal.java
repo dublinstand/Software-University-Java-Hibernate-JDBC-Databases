@@ -1,9 +1,7 @@
 package com.neckandelbows.terminal;
 
-import com.neckandelbows.dao.BasicIngredientDao;
-import com.neckandelbows.dao.BasicShampooDao;
-import com.neckandelbows.dao.ClassicLabelDao;
-import com.neckandelbows.dao.ProductionBatchDao;
+import com.neckandelbows.dao.*;
+import com.neckandelbows.domain.enums.Size;
 import com.neckandelbows.domain.ingredients.Ingredient;
 import com.neckandelbows.domain.labels.ClassicLabel;
 import com.neckandelbows.domain.shampoos.BasicShampoo;
@@ -46,6 +44,9 @@ public class Terminal implements CommandLineRunner {
 
     @Autowired
     private ProductionBatchDao productionBatchDao;
+
+    @Autowired
+    private ChemicalIngredientRepository chemicalIngredientRepository;
 
     @Override
     public void run(String... strings) throws Exception {
@@ -185,5 +186,8 @@ public class Terminal implements CommandLineRunner {
         //22.Update Ingredients by price
         //Create a method that increases the price of all ingredients by 10%. Use named query.
         basicIngredientDao.updateAllPrices();
+
+        //Advanced - find by chemical formula from BasicChemicalIngredient
+        chemicalIngredientRepository.findByChemicalFormula("NH4Cl");
     }
 }
