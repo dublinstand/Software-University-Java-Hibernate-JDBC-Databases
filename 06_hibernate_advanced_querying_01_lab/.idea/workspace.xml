@@ -611,7 +611,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3805147" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../06_hibernate_advanced_querying_02_exercise_bookshop" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
