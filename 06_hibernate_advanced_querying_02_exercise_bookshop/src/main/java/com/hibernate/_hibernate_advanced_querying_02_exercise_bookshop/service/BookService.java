@@ -1,6 +1,9 @@
 package com.hibernate._hibernate_advanced_querying_02_exercise_bookshop.service;
 
 import com.hibernate._hibernate_advanced_querying_02_exercise_bookshop.domain.Book;
+import com.hibernate._hibernate_advanced_querying_02_exercise_bookshop.domain.enums.AgeRestriction;
+
+import java.util.List;
 
 public interface BookService {
 
@@ -13,4 +16,6 @@ public interface BookService {
     Book findAuthor(Long id);
 
     Iterable<Book> findAuthors();
+
+    List<Book> findByAgeRestriction(AgeRestriction ageRestriction);
 }

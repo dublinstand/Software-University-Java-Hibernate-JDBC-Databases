@@ -3,9 +3,12 @@ package com.hibernate._hibernate_advanced_querying_02_exercise_bookshop.servicei
 
 import com.hibernate._hibernate_advanced_querying_02_exercise_bookshop.dao.BookDao;
 import com.hibernate._hibernate_advanced_querying_02_exercise_bookshop.domain.Book;
+import com.hibernate._hibernate_advanced_querying_02_exercise_bookshop.domain.enums.AgeRestriction;
 import com.hibernate._hibernate_advanced_querying_02_exercise_bookshop.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class BookServiceImpl implements BookService{
@@ -37,5 +40,10 @@ public class BookServiceImpl implements BookService{
     @Override
     public Iterable<Book> findAuthors() {
         return this.findAuthors();
+    }
+
+    @Override
+    public List<Book> findByAgeRestriction(AgeRestriction ageRestriction) {
+        return this.bookDao.findByAgeRestriction(ageRestriction);
     }
 }

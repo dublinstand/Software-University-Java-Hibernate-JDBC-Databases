@@ -16,6 +16,7 @@ import org.springframework.stereotype.Component;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -43,6 +44,20 @@ public class Terminal implements CommandLineRunner{
         seedDatabase();
     }
 
+    //Write a program that print titles of all books where their age restriction matches the given input (minor, teen or adult). Ignore casing of the input.
+    private void printTitlesWithGivenAgeRestriction() throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String input;
+        while (!(input = bufferedReader.readLine()).equals("Stop")){
+            AgeRestriction ageRestriction = AgeRestriction.valueOf(input.toUpperCase());
+            List<Book> books = this.bookService.findByAgeRestriction(ageRestriction);
+            for (Book book : books) {
+                System.out.println(book.getTitle());
+            }
+        }
+    }
+
+
     private void seedDatabase() throws IOException, ParseException {
         //read data from file for authors and store them
         BufferedReader authorsReader = new BufferedReader(new FileReader("resources\\authors.txt"));
@@ -63,7 +78,7 @@ public class Terminal implements CommandLineRunner{
             Author author = new Author();
             author.setFirstName(firstName);
             author.setLastName(lastName);
-            authorService.create(author);
+            this.authorService.create(author);
             authors.add(author);
         }
 
@@ -73,7 +88,7 @@ public class Terminal implements CommandLineRunner{
         while ((line = categoriesReader.readLine()) != null){
             Category category = new Category();
             category.setName(line);
-            categoryService.create(category);
+            this.categoryService.create(category);
             categories.add(category);
         }
 
@@ -104,7 +119,15 @@ public class Terminal implements CommandLineRunner{
             int copies = Integer.parseInt(data[2]);
             BigDecimal price = new BigDecimal(data[3]);
             AgeRestriction ageRestriction = AgeRestriction.values()[Integer.parseInt(data[4])];
-            String title = data[5];
+
+            //build the title because we separate the new line by spaces
+            StringBuilder titleBuilder = new StringBuilder();
+            for (int i = 5; i < data.length; i++) {
+                titleBuilder.append(data[i]).append(" ");
+            }
+            titleBuilder.delete(titleBuilder.lastIndexOf(" "), titleBuilder.lastIndexOf(" "));
+            String title = titleBuilder.toString();
+
 
             Book book = new Book();
             book.setAuthor(author);
@@ -120,7 +143,7 @@ public class Terminal implements CommandLineRunner{
 
             book.addCategory(category);
 
-            bookService.create(book);
+            this.bookService.create(book);
         }
     }
 }

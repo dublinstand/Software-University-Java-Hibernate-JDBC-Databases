@@ -104,7 +104,15 @@ public class Terminal implements CommandLineRunner{
             int copies = Integer.parseInt(data[2]);
             BigDecimal price = new BigDecimal(data[3]);
             AgeRestriction ageRestriction = AgeRestriction.values()[Integer.parseInt(data[4])];
-            String title = data[5];
+
+
+            //build the title because we separate the new line by spaces
+            StringBuilder titleBuilder = new StringBuilder();
+            for (int i = 5; i < data.length; i++) {
+                titleBuilder.append(data[i]).append(" ");
+            }
+            titleBuilder.delete(titleBuilder.lastIndexOf(" "), titleBuilder.lastIndexOf(" "));
+            String title = titleBuilder.toString();
 
             Book book = new Book();
             book.setAuthor(author);
