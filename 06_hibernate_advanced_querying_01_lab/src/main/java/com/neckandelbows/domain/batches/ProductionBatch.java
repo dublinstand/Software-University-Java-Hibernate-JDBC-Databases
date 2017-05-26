@@ -4,14 +4,22 @@ package com.neckandelbows.domain.batches;
 import com.neckandelbows.domain.shampoos.BasicShampoo;
 
 import javax.persistence.*;
-import javax.transaction.Transactional;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
+//20.Select Batch Date, Shampoo Label Title
+//Create a method that selects batch date and shampoo label title. Use named query.
+//here we give the name for the named query to look for "getDifferentFields"
+
 @Entity
 @Table(name = "batches")
-public class ProductionBatch implements Batch{
+@NamedQuery(name = "ProductionBatch.getDifferentFields",
+        query = "SELECT b.batchDate, l.title " +
+                "FROM BasicShampoo AS s " +
+                "INNER JOIN s.batch AS b " +
+                "INNER JOIN s.label AS l ")
+public class ProductionBatch implements Batch {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

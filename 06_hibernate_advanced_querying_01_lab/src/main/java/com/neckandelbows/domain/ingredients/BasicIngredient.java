@@ -7,11 +7,19 @@ import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 
+//21.Delete Ingredients by name
+//Create a method that deletes ingredients by a given name. Use named query.
+
+
+
 @Entity
 @Table(name = "igredients")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "ingredient_type", discriminatorType = DiscriminatorType.STRING)
-public abstract class BasicIngredient implements Ingredient{
+@NamedQuery(name = "BasicIngredient.deleteByName",
+        query = "DELETE FROM BasicIngredient AS b " +
+                "WHERE b.name = :name")
+public abstract class BasicIngredient implements Ingredient {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -74,6 +82,6 @@ public abstract class BasicIngredient implements Ingredient{
 
     @Override
     public void setShampoos(Set<BasicShampoo> shampoos) {
-        this.shampoos=shampoos;
+        this.shampoos = shampoos;
     }
 }
