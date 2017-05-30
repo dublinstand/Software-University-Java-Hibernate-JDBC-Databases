@@ -41,7 +41,7 @@ public class Terminal implements CommandLineRunner{
 
     @Override
     public void run(String... strings) throws Exception {
-        seedDatabase();
+        countBooksByCategory();
     }
 
     //Write a program that print titles of all books where their age restriction matches the given input (minor, teen or adult). Ignore casing of the input.
@@ -54,6 +54,106 @@ public class Terminal implements CommandLineRunner{
             for (Book book : books) {
                 System.out.println(book.getTitle());
             }
+        }
+    }
+
+    //Write a program that print titles of the golden edition books and have less than 5000 copies.
+    private void findByGoldenEditionAndPages(){
+        List<Book> books = this.bookService.findGoldenEditionBooksWithLessThan5000Copies();
+        for (Book book : books) {
+            System.out.println(book.getTitle());
+        }
+    }
+
+    //Write a program that print titles of all books that are NOT released on given year.
+    private void findBookByDateNot() throws ParseException {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date dtm = simpleDateFormat.parse("2000-03-12");
+
+        List<Book> books = this.bookService.findByReleaseDateNot(dtm);
+        for (Book book : books) {
+            System.out.println(book.getTitle());
+        }
+    }
+
+    //Write a program that print number of books whose title is longer than a number given as an input.
+    private void findBooksByTitleLength() throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        int length = Integer.parseInt(bufferedReader.readLine());
+        int numberOfBooks = this.bookService.countByTitleWithLengthMoreThan(length);
+        System.out.println(numberOfBooks);
+
+    }
+
+
+    //Write a program that print titles and price of books with price lower than 5 and higher than 40.
+    private void findBooksWithPriceLowerThan5PriceHigherThan40(){
+        List<Book> books = this.bookService.findBooksWithPriceLowerThan5PriceHigherThan40();
+        for (Book book : books) {
+            System.out.println(String.format("%s - %s", book.getTitle(), book.getPrice()));
+        }
+    }
+
+    //Write a program that print titles of books by given list of categories.
+    //The list of categories will be given in a single one separated with one or more spaces.
+    private void findBooksByCategories() throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String[] input = bufferedReader.readLine().split("\\s+");
+        List<Category> categories = this.categoryService.findByNameIn(input);
+
+        List<Book> books = this.bookService.findByCategoriesIn(categories);
+        for (Book book : books) {
+            System.out.println(book.getTitle());
+        }
+    }
+
+    //Write a program that print the total number of book copies by author. Order the results descending by total book copies.
+    private void findByAuthorsWithBooks(){
+        List<Object[]> objects = this.authorService.findSumOfCopies();
+        for (Object[] object : objects) {
+            Author author = (Author) object[0];
+            Long count = (Long) object[1];
+            System.out.println(String.format("%s %s - %d", author.getFirstName(), author.getLastName(), count));
+        }
+    }
+
+    //Get the most recent books by categories. The categories should be ordered by total book count.
+    // Only take the top 3 most recent books from each category - ordered by date (descending), then by title (ascending).
+    // Print the category name, total book count and for each book - its title and release date. Get only those categories that have
+    // total book count more than 10.
+    //Note: Books may appear in several categories.
+    private void countBooksByCategory(){
+        List<Object[]> objects = this. bookService.findCountOfBooksByCategory();
+        for (Object[] object : objects) {
+            Category category = (Category) object[0];
+            Long count = (Long) object[1];
+            System.out.println(String.format("--%s: %d books", category.getName(), count));
+
+            List<Book> books = this.bookService.findByCategoryOrderByReleaseDateDescTitleAsc(category);
+            for (Book book : books) {
+                String title = book.getTitle();
+                String year = new SimpleDateFormat("yyyy").format(book.getReleaseDate());
+                System.out.println(String.format("%s (%s)", title, year));
+            }
+        }
+    }
+
+    //Increase Book Copies
+    //Write a program that increases the copies of all books released after given date with given number. Print the total amount of book copies that were added.
+    //Input
+    //On the first line – date in format dd-MMM-yyyy. If a book is released after that date (exclusive) increase her book copies with the provided number from the second line of input
+    //On the second line – number of book copies each book should be increased
+    //Total number of books that was added to the database
+    private void increaseBookCopies() throws IOException, ParseException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String input;
+        while (!(input = bufferedReader.readLine()).equals("Stop")){
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MMM-yyyy");
+            Date releaseDate = simpleDateFormat.parse(input);
+            Long copies = Long.parseLong(bufferedReader.readLine());
+            Long booksUpdated = this.bookService.increaseBookCopies(releaseDate, copies);
+            Long totalCopies = booksUpdated * copies;
+            System.out.println(String.format("%d books are released after %d so total of %s book copies were added", booksUpdated, releaseDate, totalCopies));
         }
     }
 

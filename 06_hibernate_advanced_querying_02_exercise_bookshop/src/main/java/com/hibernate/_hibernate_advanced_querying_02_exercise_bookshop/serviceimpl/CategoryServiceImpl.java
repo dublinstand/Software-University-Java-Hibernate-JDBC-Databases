@@ -7,6 +7,8 @@ import com.hibernate._hibernate_advanced_querying_02_exercise_bookshop.service.C
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class CategoryServiceImpl implements CategoryService{
 
@@ -39,4 +41,11 @@ public class CategoryServiceImpl implements CategoryService{
     public Iterable<Category> findAuthors() {
         return this.categoryDao.findAll();
     }
+
+    @Override
+    public List<Category> findByNameIn(String[] names) {
+        return this.categoryDao.findByNameIn(names);
+    }
+
+
 }

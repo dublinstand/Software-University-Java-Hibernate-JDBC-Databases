@@ -7,6 +7,8 @@ import com.hibernate._hibernate_advanced_querying_02_exercise_bookshop.service.A
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class AuthorServiceImpl implements AuthorService{
 
@@ -37,5 +39,10 @@ public class AuthorServiceImpl implements AuthorService{
     @Override
     public Iterable<Author> findAuthors() {
         return this.authorDao.findAll();
+    }
+
+    @Override
+    public List<Object[]> findSumOfCopies() {
+        return this.authorDao.findSumOfCopies();
     }
 }

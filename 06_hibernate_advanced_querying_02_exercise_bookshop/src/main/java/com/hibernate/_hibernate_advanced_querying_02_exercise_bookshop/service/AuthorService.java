@@ -2,6 +2,8 @@ package com.hibernate._hibernate_advanced_querying_02_exercise_bookshop.service;
 
 import com.hibernate._hibernate_advanced_querying_02_exercise_bookshop.domain.Author;
 
+import java.util.List;
+
 public interface AuthorService {
 
     void create (Author author);
@@ -13,4 +15,7 @@ public interface AuthorService {
     Author findAuthor(Long id);
 
     Iterable<Author> findAuthors();
+
+    List<Object[]> findSumOfCopies();
+
 }
