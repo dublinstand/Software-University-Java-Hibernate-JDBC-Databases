@@ -10,7 +10,7 @@
 
 <form action="#" th:action="@{/shop}" th:object="${productDto}" method="post">
     <p>Product Name: <input type="text" th:field="*{name}"/></p>
-    <p>Product Price: <input type="text" th:field="*{price}"/></p>
+    <p>Product Price: <input type="text" th:name="price"/></p>
     <p>Product Quantity: <input type="text" th:field="*{quantity}"/></p>
     <p><input type="submit" value="Submit"/></p>
 </form>

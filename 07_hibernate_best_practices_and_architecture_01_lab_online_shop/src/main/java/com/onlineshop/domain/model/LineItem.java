@@ -56,6 +56,4 @@ public class LineItem implements Serializable{
     public void setProduct(Product product) {
         this.product = product;
     }
-
-
 }
