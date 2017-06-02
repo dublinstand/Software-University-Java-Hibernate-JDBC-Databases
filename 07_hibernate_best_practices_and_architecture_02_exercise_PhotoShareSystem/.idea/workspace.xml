@@ -85,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddTagCommandTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddTagCommandTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/app/core/commands/AddTagCommandTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="174">
@@ -122,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -207,13 +207,13 @@
         <option value="$PROJECT_DIR$/src/main/java/app/core/commands/UploadProfilePictureCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/core/Engine.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/core/CommandDispatcherImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/app/annotations/Insert.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/core/commands/ExitCommand.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/app/core/commands/AddTagCommandTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/core/commands/AddTagCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/domain/model/Tag.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -1521,14 +1521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/IT and Testing/SoftUni/Java/Databases Advanced - Hibernate - октомври 2016/Exercises/07/07_3_DB-Advanced-Hibernate-Best Practices-and-Architecture-PhotoShareSystem-Skeleton_1/07. DB-Advanced-Hibernate-Best Practices-and-Architecture-PhotoShareSystem-Skeleton/src/test/java/app/core/commands/AddTagCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1615,6 +1607,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
