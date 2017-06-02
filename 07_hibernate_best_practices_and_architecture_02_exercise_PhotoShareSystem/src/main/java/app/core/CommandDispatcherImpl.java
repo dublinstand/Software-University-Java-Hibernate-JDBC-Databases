@@ -2,6 +2,11 @@ package app.core;
 
 import app.annotations.Insert;
 import app.core.commands.Command;
+import app.service.AlbumService;
+import app.service.TagService;
+import app.service.TownService;
+import app.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Constructor;
@@ -11,6 +16,20 @@ import java.lang.reflect.Field;
 public class CommandDispatcherImpl implements CommandDispatcher{
     private final String COMMANDS_PACKAGE = "app.core.commands.";
     private final String COMMAND_SUFFIX = "Command";
+
+    @Autowired
+    private TagService tagService;
+
+    @Autowired
+    private AlbumService albumService;
+
+    @Autowired
+    private TownService townService;
+
+    @Autowired
+    private UserService userService;
+
+
 
     @Override
     public Executable dispatchCommand(String commandName, String[] commandParameters) {

@@ -10,6 +10,14 @@ public class Tag implements Serializable {
     private Integer id;
     private String name;
     private Set<Album> albums;
+
+    public Tag() {
+    }
+
+    public Tag(String name) {
+        this.name = name;
+    }
+
     @Id
     @Column(name = "tag_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -43,5 +51,16 @@ public class Tag implements Serializable {
     @Override
     public String toString() {
         return this.getName();
+    }
+
+    @Override
+    public int hashCode(){
+        return this.name.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        Tag other = (Tag) obj;
+        return this.name.equals(other.getName());
     }
 }
