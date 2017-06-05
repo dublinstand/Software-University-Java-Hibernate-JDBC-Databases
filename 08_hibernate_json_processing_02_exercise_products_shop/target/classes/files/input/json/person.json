@@ -1,0 +1,12 @@
+{
+  "firstName": "Kostadin",
+  "address": {
+    "country": "Bulgaria",
+    "city": "Haskovo"
+  },
+  "phoneNumbers": [
+    {
+      "number": "088700099"
+    }
+  ]
+}
