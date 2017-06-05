@@ -1,0 +1,38 @@
+[
+  {
+    "firstName": "Donyo",
+    "address": {
+      "country": "Bulgaria",
+      "city": "Haskovo"
+    },
+    "phoneNumbers": [
+      {
+        "number": "088888888"
+      }
+    ]
+  },
+  {
+    "firstName": "Bozko",
+    "address": {
+      "country": "Bulgaria",
+      "city": "Haskovo"
+    },
+    "phoneNumbers": [
+      {
+        "number": "0899999"
+      }
+    ]
+  },
+  {
+    "firstName": "George",
+    "address": {
+      "country": "Bulgaria",
+      "city": "Haskovo"
+    },
+    "phoneNumbers": [
+      {
+        "number": "08877777"
+      }
+    ]
+  }
+]
