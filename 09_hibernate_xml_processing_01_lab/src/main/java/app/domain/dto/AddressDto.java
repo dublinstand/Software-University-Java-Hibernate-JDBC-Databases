@@ -11,7 +11,7 @@ import java.io.Serializable;
 //this annotation is for XML
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class AddressJsonDto implements Serializable{
+public class AddressDto implements Serializable{
 
     @XmlElement
     @Expose
@@ -22,7 +22,7 @@ public class AddressJsonDto implements Serializable{
     private String city;
 
 
-    public AddressJsonDto() {
+    public AddressDto() {
     }
 
     public String getCountry() {

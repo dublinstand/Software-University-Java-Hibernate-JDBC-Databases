@@ -8,7 +8,7 @@ import java.io.Serializable;
 //this annotation is for XML
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class PhoneNumberJsonDto implements Serializable{
+public class PhoneNumberDto implements Serializable{
 
     @XmlElement
     @Expose
@@ -19,16 +19,16 @@ public class PhoneNumberJsonDto implements Serializable{
     //After we run the MainApplication.class we get an error - java.lang.StackOverflowError: null.
     // This is because one person can have a lot of phone numbers and one phone number belongs to a person and we get Stack overflow.
     // We need to remove the @Expose annoation from PhonNumberJsonDto –> person;
-    private PersonJsonDto person;
+    private PersonDto person;
 
-    public PhoneNumberJsonDto() {
+    public PhoneNumberDto() {
     }
 
-    public PersonJsonDto getPerson() {
+    public PersonDto getPerson() {
         return person;
     }
 
-    public void setPerson(PersonJsonDto person) {
+    public void setPerson(PersonDto person) {
         this.person = person;
     }
 

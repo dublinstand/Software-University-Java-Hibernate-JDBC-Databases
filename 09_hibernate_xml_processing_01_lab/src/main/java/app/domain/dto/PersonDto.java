@@ -13,7 +13,7 @@ import java.util.Set;
 //this annotation is for XML
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class PersonJsonDto implements Serializable{
+public class PersonDto implements Serializable{
 
     @XmlElement
     @Expose
@@ -21,13 +21,13 @@ public class PersonJsonDto implements Serializable{
 
     @XmlElement
     @Expose
-    private AddressJsonDto address;
+    private AddressDto address;
 
     @XmlElement
     @Expose
-    private Set<PhoneNumberJsonDto> phoneNumbers;
+    private Set<PhoneNumberDto> phoneNumbers;
 
-    public PersonJsonDto() {
+    public PersonDto() {
         this.setPhoneNumbers(new HashSet<>());
     }
 
@@ -39,19 +39,19 @@ public class PersonJsonDto implements Serializable{
         this.firstName = firstName;
     }
 
-    public AddressJsonDto getAddress() {
+    public AddressDto getAddress() {
         return address;
     }
 
-    public void setAddress(AddressJsonDto address) {
+    public void setAddress(AddressDto address) {
         this.address = address;
     }
 
-    public Set<PhoneNumberJsonDto> getPhoneNumbers() {
+    public Set<PhoneNumberDto> getPhoneNumbers() {
         return phoneNumbers;
     }
 
-    public void setPhoneNumbers(Set<PhoneNumberJsonDto> phoneNumbers) {
+    public void setPhoneNumbers(Set<PhoneNumberDto> phoneNumbers) {
         this.phoneNumbers = phoneNumbers;
     }
 }

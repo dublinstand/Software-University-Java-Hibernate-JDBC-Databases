@@ -1,14 +1,14 @@
 package app.service;
 
-import app.domain.dto.PersonJsonDto;
+import app.domain.dto.PersonDto;
 
 import java.util.List;
 
 public interface PersonService {
 
-    void create(PersonJsonDto person);
+    void create(PersonDto person);
 
-    PersonJsonDto findById(long id);
+    PersonDto findById(long id);
 
-    List<PersonJsonDto> findByCountry(String country);
+    List<PersonDto> findByCountry(String country);
 }
