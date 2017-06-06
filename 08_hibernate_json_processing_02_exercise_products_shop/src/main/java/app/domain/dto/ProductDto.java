@@ -15,6 +15,12 @@ public class ProductDto {
     @Expose
     private String seller;
 
+    @Expose
+    private String buyerFirstName;
+
+    @Expose
+    private String buyerLastName;
+
 
     public ProductDto() {
     }
@@ -41,5 +47,21 @@ public class ProductDto {
 
     public void setSeller(String seller) {
         this.seller = seller;
+    }
+
+    public String getBuyerFirstName() {
+        return buyerFirstName;
+    }
+
+    public void setBuyerFirstName(String buyerFirstName) {
+        this.buyerFirstName = buyerFirstName;
+    }
+
+    public String getBuyerLastName() {
+        return buyerLastName;
+    }
+
+    public void setBuyerLastName(String buyerLastName) {
+        this.buyerLastName = buyerLastName;
     }
 }

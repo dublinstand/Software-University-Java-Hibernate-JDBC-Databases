@@ -5,44 +5,6 @@
     "age": 65,
     "soldProducts": [
       {
-        "name": "CARBIDOPA AND LEVODOPA",
-        "price": 441.64,
-        "buyerFirstName": "Eugene",
-        "buyerLastName": "Stewart"
-      },
-      {
-        "name": "Metformin Hydrochloride",
-        "price": 953.99,
-        "buyerFirstName": "Eugene",
-        "buyerLastName": "Stewart"
-      }
-    ]
-  },
-  {
-    "firstName": "Eugene",
-    "lastName": "Stewart",
-    "age": 65,
-    "soldProducts": [
-      {
-        "name": "CARBIDOPA AND LEVODOPA",
-        "price": 441.64,
-        "buyerFirstName": "Eugene",
-        "buyerLastName": "Stewart"
-      },
-      {
-        "name": "Metformin Hydrochloride",
-        "price": 953.99,
-        "buyerFirstName": "Eugene",
-        "buyerLastName": "Stewart"
-      }
-    ]
-  },
-  {
-    "firstName": "Eugene",
-    "lastName": "Stewart",
-    "age": 65,
-    "soldProducts": [
-      {
         "name": "Metformin Hydrochloride",
         "price": 953.99,
         "buyerFirstName": "Eugene",
@@ -70,6 +32,44 @@
       {
         "name": "Metformin Hydrochloride",
         "price": 953.99,
+        "buyerFirstName": "Eugene",
+        "buyerLastName": "Stewart"
+      }
+    ]
+  },
+  {
+    "firstName": "Eugene",
+    "lastName": "Stewart",
+    "age": 65,
+    "soldProducts": [
+      {
+        "name": "Metformin Hydrochloride",
+        "price": 953.99,
+        "buyerFirstName": "Eugene",
+        "buyerLastName": "Stewart"
+      },
+      {
+        "name": "CARBIDOPA AND LEVODOPA",
+        "price": 441.64,
+        "buyerFirstName": "Eugene",
+        "buyerLastName": "Stewart"
+      }
+    ]
+  },
+  {
+    "firstName": "Eugene",
+    "lastName": "Stewart",
+    "age": 65,
+    "soldProducts": [
+      {
+        "name": "Metformin Hydrochloride",
+        "price": 953.99,
+        "buyerFirstName": "Eugene",
+        "buyerLastName": "Stewart"
+      },
+      {
+        "name": "CARBIDOPA AND LEVODOPA",
+        "price": 441.64,
         "buyerFirstName": "Eugene",
         "buyerLastName": "Stewart"
       }
@@ -125,14 +125,8 @@
         "buyerLastName": "Allen"
       },
       {
-        "name": "PREMIER VALUE ALLERGY",
-        "price": 1127.61,
-        "buyerFirstName": "Fred",
-        "buyerLastName": "Allen"
-      },
-      {
-        "name": "Alcohol Free Antiseptic",
-        "price": 1486.07,
+        "name": "Ibuprofen",
+        "price": 1088.04,
         "buyerFirstName": "Fred",
         "buyerLastName": "Allen"
       },
@@ -143,8 +137,8 @@
         "buyerLastName": "Allen"
       },
       {
-        "name": "Ibuprofen",
-        "price": 1088.04,
+        "name": "LBEL Couleur Luxe Rouge Amplifier XP amplifying SPF 15",
+        "price": 1069.43,
         "buyerFirstName": "Fred",
         "buyerLastName": "Allen"
       },
@@ -155,14 +149,20 @@
         "buyerLastName": "Allen"
       },
       {
-        "name": "Nighttime Sleep Aid",
-        "price": 1217.11,
+        "name": "Alcohol Free Antiseptic",
+        "price": 1486.07,
         "buyerFirstName": "Fred",
         "buyerLastName": "Allen"
       },
       {
-        "name": "LBEL Couleur Luxe Rouge Amplifier XP amplifying SPF 15",
-        "price": 1069.43,
+        "name": "PREMIER VALUE ALLERGY",
+        "price": 1127.61,
+        "buyerFirstName": "Fred",
+        "buyerLastName": "Allen"
+      },
+      {
+        "name": "Nighttime Sleep Aid",
+        "price": 1217.11,
         "buyerFirstName": "Fred",
         "buyerLastName": "Allen"
       }
@@ -174,14 +174,20 @@
     "age": 50,
     "soldProducts": [
       {
+        "name": "BareMinerals Golden Tan matte",
+        "price": 110.93,
+        "buyerFirstName": "Clarence",
+        "buyerLastName": "Fowler"
+      },
+      {
         "name": "TRAMADOL HYDROCHLORIDE",
         "price": 516.48,
         "buyerFirstName": "Clarence",
         "buyerLastName": "Fowler"
       },
       {
-        "name": "Gilotrif",
-        "price": 1454.77,
+        "name": "Oxygen",
+        "price": 1242.92,
         "buyerFirstName": "Clarence",
         "buyerLastName": "Fowler"
       },
@@ -192,14 +198,8 @@
         "buyerLastName": "Fowler"
       },
       {
-        "name": "BareMinerals Golden Tan matte",
-        "price": 110.93,
-        "buyerFirstName": "Clarence",
-        "buyerLastName": "Fowler"
-      },
-      {
-        "name": "Oxygen",
-        "price": 1242.92,
+        "name": "Gilotrif",
+        "price": 1454.77,
         "buyerFirstName": "Clarence",
         "buyerLastName": "Fowler"
       }
@@ -211,14 +211,14 @@
     "age": 38,
     "soldProducts": [
       {
-        "name": "Treatment Set TS336667",
-        "price": 1466.47,
+        "name": "cough and sore throat",
+        "price": 1482.68,
         "buyerFirstName": "Betty",
         "buyerLastName": "Lawson"
       },
       {
-        "name": "cough and sore throat",
-        "price": 1482.68,
+        "name": "Treatment Set TS336667",
+        "price": 1466.47,
         "buyerFirstName": "Betty",
         "buyerLastName": "Lawson"
       }
@@ -266,14 +266,8 @@
     "age": 59,
     "soldProducts": [
       {
-        "name": "Metaxalone",
-        "price": 79.94,
-        "buyerFirstName": "Carl",
-        "buyerLastName": "Daniels"
-      },
-      {
-        "name": "IOPE SUPER VITAL",
-        "price": 824.68,
+        "name": "PANTOPRAZOLE SODIUM",
+        "price": 293.89,
         "buyerFirstName": "Carl",
         "buyerLastName": "Daniels"
       },
@@ -284,8 +278,14 @@
         "buyerLastName": "Daniels"
       },
       {
-        "name": "PANTOPRAZOLE SODIUM",
-        "price": 293.89,
+        "name": "Metaxalone",
+        "price": 79.94,
+        "buyerFirstName": "Carl",
+        "buyerLastName": "Daniels"
+      },
+      {
+        "name": "IOPE SUPER VITAL",
+        "price": 824.68,
         "buyerFirstName": "Carl",
         "buyerLastName": "Daniels"
       }
@@ -297,79 +297,16 @@
     "age": 19,
     "soldProducts": [
       {
-        "name": "ISOPROPYL ALCOHOL",
-        "price": 339.48,
-        "buyerFirstName": "Carl",
-        "buyerLastName": "Lawson"
-      },
-      {
         "name": "Goats Milk",
         "price": 298.53,
         "buyerFirstName": "Carl",
         "buyerLastName": "Lawson"
-      }
-    ]
-  },
-  {
-    "lastName": "Fox",
-    "age": 68,
-    "soldProducts": [
-      {
-        "name": "Levothyroxine Sodium",
-        "price": 885.86,
-        "buyerLastName": "Fox"
       },
       {
-        "name": "Naproxen",
-        "price": 807.22,
-        "buyerLastName": "Fox"
-      },
-      {
-        "name": "ropinirole hydrochloride",
-        "price": 103.58,
-        "buyerLastName": "Fox"
-      }
-    ]
-  },
-  {
-    "lastName": "Fox",
-    "age": 68,
-    "soldProducts": [
-      {
-        "name": "Naproxen",
-        "price": 807.22,
-        "buyerLastName": "Fox"
-      },
-      {
-        "name": "Levothyroxine Sodium",
-        "price": 885.86,
-        "buyerLastName": "Fox"
-      },
-      {
-        "name": "ropinirole hydrochloride",
-        "price": 103.58,
-        "buyerLastName": "Fox"
-      }
-    ]
-  },
-  {
-    "lastName": "Fox",
-    "age": 68,
-    "soldProducts": [
-      {
-        "name": "Naproxen",
-        "price": 807.22,
-        "buyerLastName": "Fox"
-      },
-      {
-        "name": "Levothyroxine Sodium",
-        "price": 885.86,
-        "buyerLastName": "Fox"
-      },
-      {
-        "name": "ropinirole hydrochloride",
-        "price": 103.58,
-        "buyerLastName": "Fox"
+        "name": "ISOPROPYL ALCOHOL",
+        "price": 339.48,
+        "buyerFirstName": "Carl",
+        "buyerLastName": "Lawson"
       }
     ]
   },
@@ -416,27 +353,65 @@
     ]
   },
   {
-    "firstName": "Gary",
-    "lastName": "Stevens",
-    "age": 0,
+    "lastName": "Fox",
+    "age": 68,
     "soldProducts": [
       {
-        "name": "Protonix",
-        "price": 466.70,
-        "buyerFirstName": "Gary",
-        "buyerLastName": "Stevens"
+        "name": "Levothyroxine Sodium",
+        "price": 885.86,
+        "buyerLastName": "Fox"
       },
       {
-        "name": "CD CAPTURE TOTALE Triple Correcting Serum Foundation Wrinkles-Dark Spots-Radiance with sunscreen Broad Spectrum SPF 25 010",
-        "price": 77.23,
-        "buyerFirstName": "Gary",
-        "buyerLastName": "Stevens"
+        "name": "ropinirole hydrochloride",
+        "price": 103.58,
+        "buyerLastName": "Fox"
       },
       {
-        "name": "Aspen",
-        "price": 1046.46,
-        "buyerFirstName": "Gary",
-        "buyerLastName": "Stevens"
+        "name": "Naproxen",
+        "price": 807.22,
+        "buyerLastName": "Fox"
+      }
+    ]
+  },
+  {
+    "lastName": "Fox",
+    "age": 68,
+    "soldProducts": [
+      {
+        "name": "ropinirole hydrochloride",
+        "price": 103.58,
+        "buyerLastName": "Fox"
+      },
+      {
+        "name": "Levothyroxine Sodium",
+        "price": 885.86,
+        "buyerLastName": "Fox"
+      },
+      {
+        "name": "Naproxen",
+        "price": 807.22,
+        "buyerLastName": "Fox"
+      }
+    ]
+  },
+  {
+    "lastName": "Fox",
+    "age": 68,
+    "soldProducts": [
+      {
+        "name": "Naproxen",
+        "price": 807.22,
+        "buyerLastName": "Fox"
+      },
+      {
+        "name": "ropinirole hydrochloride",
+        "price": 103.58,
+        "buyerLastName": "Fox"
+      },
+      {
+        "name": "Levothyroxine Sodium",
+        "price": 885.86,
+        "buyerLastName": "Fox"
       }
     ]
   },
@@ -446,62 +421,6 @@
     "age": 0,
     "soldProducts": [
       {
-        "name": "Aspen",
-        "price": 1046.46,
-        "buyerFirstName": "Gary",
-        "buyerLastName": "Stevens"
-      },
-      {
-        "name": "CD CAPTURE TOTALE Triple Correcting Serum Foundation Wrinkles-Dark Spots-Radiance with sunscreen Broad Spectrum SPF 25 010",
-        "price": 77.23,
-        "buyerFirstName": "Gary",
-        "buyerLastName": "Stevens"
-      },
-      {
-        "name": "Protonix",
-        "price": 466.70,
-        "buyerFirstName": "Gary",
-        "buyerLastName": "Stevens"
-      }
-    ]
-  },
-  {
-    "firstName": "Gary",
-    "lastName": "Stevens",
-    "age": 0,
-    "soldProducts": [
-      {
-        "name": "Aspen",
-        "price": 1046.46,
-        "buyerFirstName": "Gary",
-        "buyerLastName": "Stevens"
-      },
-      {
-        "name": "CD CAPTURE TOTALE Triple Correcting Serum Foundation Wrinkles-Dark Spots-Radiance with sunscreen Broad Spectrum SPF 25 010",
-        "price": 77.23,
-        "buyerFirstName": "Gary",
-        "buyerLastName": "Stevens"
-      },
-      {
-        "name": "Protonix",
-        "price": 466.70,
-        "buyerFirstName": "Gary",
-        "buyerLastName": "Stevens"
-      }
-    ]
-  },
-  {
-    "firstName": "Gary",
-    "lastName": "Stevens",
-    "age": 0,
-    "soldProducts": [
-      {
-        "name": "Protonix",
-        "price": 466.70,
-        "buyerFirstName": "Gary",
-        "buyerLastName": "Stevens"
-      },
-      {
         "name": "CD CAPTURE TOTALE Triple Correcting Serum Foundation Wrinkles-Dark Spots-Radiance with sunscreen Broad Spectrum SPF 25 010",
         "price": 77.23,
         "buyerFirstName": "Gary",
@@ -510,6 +429,12 @@
       {
         "name": "Aspen",
         "price": 1046.46,
+        "buyerFirstName": "Gary",
+        "buyerLastName": "Stevens"
+      },
+      {
+        "name": "Protonix",
+        "price": 466.70,
         "buyerFirstName": "Gary",
         "buyerLastName": "Stevens"
       }
@@ -541,33 +466,77 @@
     ]
   },
   {
-    "lastName": "Mitchell",
-    "age": 41,
+    "firstName": "Gary",
+    "lastName": "Stevens",
+    "age": 0,
     "soldProducts": [
       {
-        "name": "Pollens - Trees, Birch Mix",
-        "price": 1153.54,
-        "buyerLastName": "Mitchell"
+        "name": "Aspen",
+        "price": 1046.46,
+        "buyerFirstName": "Gary",
+        "buyerLastName": "Stevens"
       },
       {
-        "name": "Etomidate",
-        "price": 393.94,
-        "buyerLastName": "Mitchell"
+        "name": "CD CAPTURE TOTALE Triple Correcting Serum Foundation Wrinkles-Dark Spots-Radiance with sunscreen Broad Spectrum SPF 25 010",
+        "price": 77.23,
+        "buyerFirstName": "Gary",
+        "buyerLastName": "Stevens"
       },
       {
-        "name": "Pollens - Weeds and Garden Plants, Scotch Broom Cytisus scoparius",
-        "price": 135.82,
-        "buyerLastName": "Mitchell"
+        "name": "Protonix",
+        "price": 466.70,
+        "buyerFirstName": "Gary",
+        "buyerLastName": "Stevens"
+      }
+    ]
+  },
+  {
+    "firstName": "Gary",
+    "lastName": "Stevens",
+    "age": 0,
+    "soldProducts": [
+      {
+        "name": "Protonix",
+        "price": 466.70,
+        "buyerFirstName": "Gary",
+        "buyerLastName": "Stevens"
       },
       {
-        "name": "Strattera",
-        "price": 658.54,
-        "buyerLastName": "Mitchell"
+        "name": "CD CAPTURE TOTALE Triple Correcting Serum Foundation Wrinkles-Dark Spots-Radiance with sunscreen Broad Spectrum SPF 25 010",
+        "price": 77.23,
+        "buyerFirstName": "Gary",
+        "buyerLastName": "Stevens"
       },
       {
-        "name": "LANEIGE MYSTIC VEIL FOUNDATION",
-        "price": 20.86,
-        "buyerLastName": "Mitchell"
+        "name": "Aspen",
+        "price": 1046.46,
+        "buyerFirstName": "Gary",
+        "buyerLastName": "Stevens"
+      }
+    ]
+  },
+  {
+    "firstName": "Gary",
+    "lastName": "Stevens",
+    "age": 0,
+    "soldProducts": [
+      {
+        "name": "Protonix",
+        "price": 466.70,
+        "buyerFirstName": "Gary",
+        "buyerLastName": "Stevens"
+      },
+      {
+        "name": "Aspen",
+        "price": 1046.46,
+        "buyerFirstName": "Gary",
+        "buyerLastName": "Stevens"
+      },
+      {
+        "name": "CD CAPTURE TOTALE Triple Correcting Serum Foundation Wrinkles-Dark Spots-Radiance with sunscreen Broad Spectrum SPF 25 010",
+        "price": 77.23,
+        "buyerFirstName": "Gary",
+        "buyerLastName": "Stevens"
       }
     ]
   },
@@ -591,14 +560,123 @@
         "buyerLastName": "Mitchell"
       },
       {
+        "name": "Pollens - Trees, Birch Mix",
+        "price": 1153.54,
+        "buyerLastName": "Mitchell"
+      },
+      {
         "name": "LANEIGE MYSTIC VEIL FOUNDATION",
         "price": 20.86,
         "buyerLastName": "Mitchell"
-      },
+      }
+    ]
+  },
+  {
+    "lastName": "Mitchell",
+    "age": 41,
+    "soldProducts": [
       {
         "name": "Pollens - Trees, Birch Mix",
         "price": 1153.54,
         "buyerLastName": "Mitchell"
+      },
+      {
+        "name": "Pollens - Weeds and Garden Plants, Scotch Broom Cytisus scoparius",
+        "price": 135.82,
+        "buyerLastName": "Mitchell"
+      },
+      {
+        "name": "Etomidate",
+        "price": 393.94,
+        "buyerLastName": "Mitchell"
+      },
+      {
+        "name": "Strattera",
+        "price": 658.54,
+        "buyerLastName": "Mitchell"
+      },
+      {
+        "name": "LANEIGE MYSTIC VEIL FOUNDATION",
+        "price": 20.86,
+        "buyerLastName": "Mitchell"
+      }
+    ]
+  },
+  {
+    "lastName": "Bennett",
+    "age": 0,
+    "soldProducts": [
+      {
+        "name": "Diastat",
+        "price": 614.14,
+        "buyerLastName": "Bennett"
+      },
+      {
+        "name": "PAMO Kill Natural",
+        "price": 1181.06,
+        "buyerLastName": "Bennett"
+      },
+      {
+        "name": "GEMCITABINE",
+        "price": 1468.11,
+        "buyerLastName": "Bennett"
+      },
+      {
+        "name": "Allopurinol",
+        "price": 48.80,
+        "buyerLastName": "Bennett"
+      }
+    ]
+  },
+  {
+    "lastName": "Bennett",
+    "age": 0,
+    "soldProducts": [
+      {
+        "name": "GEMCITABINE",
+        "price": 1468.11,
+        "buyerLastName": "Bennett"
+      },
+      {
+        "name": "PAMO Kill Natural",
+        "price": 1181.06,
+        "buyerLastName": "Bennett"
+      },
+      {
+        "name": "Diastat",
+        "price": 614.14,
+        "buyerLastName": "Bennett"
+      },
+      {
+        "name": "Allopurinol",
+        "price": 48.80,
+        "buyerLastName": "Bennett"
+      }
+    ]
+  },
+  {
+    "lastName": "Bennett",
+    "age": 0,
+    "soldProducts": [
+      {
+        "name": "GEMCITABINE",
+        "price": 1468.11,
+        "buyerLastName": "Bennett"
+      },
+      {
+        "name": "Allopurinol",
+        "price": 48.80,
+        "buyerLastName": "Bennett"
+      },
+      {
+        "name": "Diastat",
+        "price": 614.14,
+        "buyerLastName": "Bennett"
+      },
+      {
+        "name": "PAMO Kill Natural",
+        "price": 1181.06,
+        "buyerLastName": "Bennett"
       }
     ]
   },
@@ -633,60 +711,8 @@
     "age": 0,
     "soldProducts": [
       {
-        "name": "PAMO Kill Natural",
-        "price": 1181.06,
-        "buyerLastName": "Bennett"
-      },
-      {
-        "name": "Allopurinol",
-        "price": 48.80,
-        "buyerLastName": "Bennett"
-      },
-      {
-        "name": "Diastat",
-        "price": 614.14,
-        "buyerLastName": "Bennett"
-      },
-      {
         "name": "GEMCITABINE",
         "price": 1468.11,
-        "buyerLastName": "Bennett"
-      }
-    ]
-  },
-  {
-    "lastName": "Bennett",
-    "age": 0,
-    "soldProducts": [
-      {
-        "name": "PAMO Kill Natural",
-        "price": 1181.06,
-        "buyerLastName": "Bennett"
-      },
-      {
-        "name": "Diastat",
-        "price": 614.14,
-        "buyerLastName": "Bennett"
-      },
-      {
-        "name": "GEMCITABINE",
-        "price": 1468.11,
-        "buyerLastName": "Bennett"
-      },
-      {
-        "name": "Allopurinol",
-        "price": 48.80,
-        "buyerLastName": "Bennett"
-      }
-    ]
-  },
-  {
-    "lastName": "Bennett",
-    "age": 0,
-    "soldProducts": [
-      {
-        "name": "Allopurinol",
-        "price": 48.80,
         "buyerLastName": "Bennett"
       },
       {
@@ -700,34 +726,8 @@
         "buyerLastName": "Bennett"
       },
       {
-        "name": "GEMCITABINE",
-        "price": 1468.11,
-        "buyerLastName": "Bennett"
-      }
-    ]
-  },
-  {
-    "lastName": "Bennett",
-    "age": 0,
-    "soldProducts": [
-      {
-        "name": "Diastat",
-        "price": 614.14,
-        "buyerLastName": "Bennett"
-      },
-      {
         "name": "Allopurinol",
         "price": 48.80,
-        "buyerLastName": "Bennett"
-      },
-      {
-        "name": "GEMCITABINE",
-        "price": 1468.11,
-        "buyerLastName": "Bennett"
-      },
-      {
-        "name": "PAMO Kill Natural",
-        "price": 1181.06,
         "buyerLastName": "Bennett"
       }
     ]
@@ -776,14 +776,14 @@
     "age": 75,
     "soldProducts": [
       {
-        "name": "Labetalol Hydrochloride",
-        "price": 1345.11,
+        "name": "Topiramate",
+        "price": 578.77,
         "buyerFirstName": "Brenda",
         "buyerLastName": "Howell"
       },
       {
-        "name": "Topiramate",
-        "price": 578.77,
+        "name": "Labetalol Hydrochloride",
+        "price": 1345.11,
         "buyerFirstName": "Brenda",
         "buyerLastName": "Howell"
       }
@@ -795,14 +795,14 @@
     "age": 75,
     "soldProducts": [
       {
-        "name": "Topiramate",
-        "price": 578.77,
+        "name": "Labetalol Hydrochloride",
+        "price": 1345.11,
         "buyerFirstName": "Brenda",
         "buyerLastName": "Howell"
       },
       {
-        "name": "Labetalol Hydrochloride",
-        "price": 1345.11,
+        "name": "Topiramate",
+        "price": 578.77,
         "buyerFirstName": "Brenda",
         "buyerLastName": "Howell"
       }
@@ -858,31 +858,6 @@
     "age": 30,
     "soldProducts": [
       {
-        "name": "Labetalol hydrochloride",
-        "price": 436.38,
-        "buyerFirstName": "Brandon",
-        "buyerLastName": "Fuller"
-      },
-      {
-        "name": "Buprenorphine hydrochloride and naloxone hydrochloride dihydrate",
-        "price": 293.33,
-        "buyerFirstName": "Brandon",
-        "buyerLastName": "Fuller"
-      },
-      {
-        "name": "Baza Antifungal",
-        "price": 1162.34,
-        "buyerFirstName": "Brandon",
-        "buyerLastName": "Fuller"
-      }
-    ]
-  },
-  {
-    "firstName": "Brandon",
-    "lastName": "Fuller",
-    "age": 30,
-    "soldProducts": [
-      {
         "name": "Buprenorphine hydrochloride and naloxone hydrochloride dihydrate",
         "price": 293.33,
         "buyerFirstName": "Brandon",
@@ -908,8 +883,8 @@
     "age": 30,
     "soldProducts": [
       {
-        "name": "Labetalol hydrochloride",
-        "price": 436.38,
+        "name": "Baza Antifungal",
+        "price": 1162.34,
         "buyerFirstName": "Brandon",
         "buyerLastName": "Fuller"
       },
@@ -920,8 +895,33 @@
         "buyerLastName": "Fuller"
       },
       {
+        "name": "Labetalol hydrochloride",
+        "price": 436.38,
+        "buyerFirstName": "Brandon",
+        "buyerLastName": "Fuller"
+      }
+    ]
+  },
+  {
+    "firstName": "Brandon",
+    "lastName": "Fuller",
+    "age": 30,
+    "soldProducts": [
+      {
+        "name": "Buprenorphine hydrochloride and naloxone hydrochloride dihydrate",
+        "price": 293.33,
+        "buyerFirstName": "Brandon",
+        "buyerLastName": "Fuller"
+      },
+      {
         "name": "Baza Antifungal",
         "price": 1162.34,
+        "buyerFirstName": "Brandon",
+        "buyerLastName": "Fuller"
+      },
+      {
+        "name": "Labetalol hydrochloride",
+        "price": 436.38,
         "buyerFirstName": "Brandon",
         "buyerLastName": "Fuller"
       }
@@ -970,38 +970,6 @@
     "age": 39,
     "soldProducts": [
       {
-        "name": "Acnezzol Base",
-        "price": 710.60,
-        "buyerLastName": "Stewart"
-      },
-      {
-        "name": "Moore Medical Sinus Pain and Pressure Relief",
-        "price": 855.39,
-        "buyerLastName": "Stewart"
-      }
-    ]
-  },
-  {
-    "lastName": "Stewart",
-    "age": 39,
-    "soldProducts": [
-      {
-        "name": "Moore Medical Sinus Pain and Pressure Relief",
-        "price": 855.39,
-        "buyerLastName": "Stewart"
-      },
-      {
-        "name": "Acnezzol Base",
-        "price": 710.60,
-        "buyerLastName": "Stewart"
-      }
-    ]
-  },
-  {
-    "lastName": "Stewart",
-    "age": 39,
-    "soldProducts": [
-      {
         "name": "Moore Medical Sinus Pain and Pressure Relief",
         "price": 855.39,
         "buyerLastName": "Stewart"
@@ -1057,6 +1025,38 @@
       {
         "name": "Moore Medical Sinus Pain and Pressure Relief",
         "price": 855.39,
+        "buyerLastName": "Stewart"
+      }
+    ]
+  },
+  {
+    "lastName": "Stewart",
+    "age": 39,
+    "soldProducts": [
+      {
+        "name": "Acnezzol Base",
+        "price": 710.60,
+        "buyerLastName": "Stewart"
+      },
+      {
+        "name": "Moore Medical Sinus Pain and Pressure Relief",
+        "price": 855.39,
+        "buyerLastName": "Stewart"
+      }
+    ]
+  },
+  {
+    "lastName": "Stewart",
+    "age": 39,
+    "soldProducts": [
+      {
+        "name": "Moore Medical Sinus Pain and Pressure Relief",
+        "price": 855.39,
+        "buyerLastName": "Stewart"
+      },
+      {
+        "name": "Acnezzol Base",
+        "price": 710.60,
         "buyerLastName": "Stewart"
       }
     ]
@@ -1082,26 +1082,10 @@
     "age": 72,
     "soldProducts": [
       {
-        "name": "ORCHID SECRET PACT",
-        "price": 59.53,
-        "buyerLastName": "Peterson"
-      },
-      {
-        "name": "ERYTHROMYCIN Base Filmtab",
-        "price": 117.84,
-        "buyerLastName": "Peterson"
-      },
-      {
         "name": "olio activ mouthwash",
         "price": 206.06,
         "buyerLastName": "Peterson"
-      }
-    ]
-  },
-  {
-    "lastName": "Peterson",
-    "age": 72,
-    "soldProducts": [
+      },
       {
         "name": "ORCHID SECRET PACT",
         "price": 59.53,
@@ -1110,32 +1094,6 @@
       {
         "name": "ERYTHROMYCIN Base Filmtab",
         "price": 117.84,
-        "buyerLastName": "Peterson"
-      },
-      {
-        "name": "olio activ mouthwash",
-        "price": 206.06,
-        "buyerLastName": "Peterson"
-      }
-    ]
-  },
-  {
-    "lastName": "Peterson",
-    "age": 72,
-    "soldProducts": [
-      {
-        "name": "ERYTHROMYCIN Base Filmtab",
-        "price": 117.84,
-        "buyerLastName": "Peterson"
-      },
-      {
-        "name": "olio activ mouthwash",
-        "price": 206.06,
-        "buyerLastName": "Peterson"
-      },
-      {
-        "name": "ORCHID SECRET PACT",
-        "price": 59.53,
         "buyerLastName": "Peterson"
       }
     ]
@@ -1150,13 +1108,55 @@
         "buyerLastName": "Peterson"
       },
       {
+        "name": "ERYTHROMYCIN Base Filmtab",
+        "price": 117.84,
+        "buyerLastName": "Peterson"
+      },
+      {
+        "name": "ORCHID SECRET PACT",
+        "price": 59.53,
+        "buyerLastName": "Peterson"
+      }
+    ]
+  },
+  {
+    "lastName": "Peterson",
+    "age": 72,
+    "soldProducts": [
+      {
         "name": "ORCHID SECRET PACT",
         "price": 59.53,
         "buyerLastName": "Peterson"
       },
       {
+        "name": "olio activ mouthwash",
+        "price": 206.06,
+        "buyerLastName": "Peterson"
+      },
+      {
         "name": "ERYTHROMYCIN Base Filmtab",
         "price": 117.84,
+        "buyerLastName": "Peterson"
+      }
+    ]
+  },
+  {
+    "lastName": "Peterson",
+    "age": 72,
+    "soldProducts": [
+      {
+        "name": "olio activ mouthwash",
+        "price": 206.06,
+        "buyerLastName": "Peterson"
+      },
+      {
+        "name": "ERYTHROMYCIN Base Filmtab",
+        "price": 117.84,
+        "buyerLastName": "Peterson"
+      },
+      {
+        "name": "ORCHID SECRET PACT",
+        "price": 59.53,
         "buyerLastName": "Peterson"
       }
     ]
@@ -1167,14 +1167,14 @@
     "age": 0,
     "soldProducts": [
       {
-        "name": "PCA SKIN ACNE",
-        "price": 1356.22,
+        "name": "Parsley",
+        "price": 519.06,
         "buyerFirstName": "Patrick",
         "buyerLastName": "King"
       },
       {
-        "name": "Parsley",
-        "price": 519.06,
+        "name": "PCA SKIN ACNE",
+        "price": 1356.22,
         "buyerFirstName": "Patrick",
         "buyerLastName": "King"
       }
@@ -1249,14 +1249,14 @@
     "age": 24,
     "soldProducts": [
       {
-        "name": "Archangelica Eucalyptus",
-        "price": 1334.91,
+        "name": "H-Rosacea Formula",
+        "price": 99.74,
         "buyerFirstName": "Rachel",
         "buyerLastName": "Johnson"
       },
       {
-        "name": "H-Rosacea Formula",
-        "price": 99.74,
+        "name": "Archangelica Eucalyptus",
+        "price": 1334.91,
         "buyerFirstName": "Rachel",
         "buyerLastName": "Johnson"
       },
@@ -1274,6 +1274,18 @@
     "age": 74,
     "soldProducts": [
       {
+        "name": "XANTHIUM STRUMARIUM VAR CANADENSE POLLEN",
+        "price": 1091.38,
+        "buyerFirstName": "Sandra",
+        "buyerLastName": "Riley"
+      },
+      {
+        "name": "Air",
+        "price": 331.53,
+        "buyerFirstName": "Sandra",
+        "buyerLastName": "Riley"
+      },
+      {
         "name": "RESCRIPTOR",
         "price": 850.52,
         "buyerFirstName": "Sandra",
@@ -1286,26 +1298,14 @@
         "buyerLastName": "Riley"
       },
       {
-        "name": "Air",
-        "price": 331.53,
-        "buyerFirstName": "Sandra",
-        "buyerLastName": "Riley"
-      },
-      {
-        "name": "XANTHIUM STRUMARIUM VAR CANADENSE POLLEN",
-        "price": 1091.38,
+        "name": "Fexofenadine HCl and Pseudoephedrine HCI",
+        "price": 73.07,
         "buyerFirstName": "Sandra",
         "buyerLastName": "Riley"
       },
       {
         "name": "Glycopyrrolate",
         "price": 1471.43,
-        "buyerFirstName": "Sandra",
-        "buyerLastName": "Riley"
-      },
-      {
-        "name": "Fexofenadine HCl and Pseudoephedrine HCI",
-        "price": 73.07,
         "buyerFirstName": "Sandra",
         "buyerLastName": "Riley"
       }
@@ -1329,22 +1329,6 @@
     "age": 18,
     "soldProducts": [
       {
-        "name": "Echinacea Quartz Gum Support",
-        "price": 570.08,
-        "buyerLastName": "Harrison"
-      },
-      {
-        "name": "Amitriptyline Hydrochloride",
-        "price": 1453.96,
-        "buyerLastName": "Harrison"
-      }
-    ]
-  },
-  {
-    "lastName": "Harrison",
-    "age": 18,
-    "soldProducts": [
-      {
         "name": "Amitriptyline Hydrochloride",
         "price": 1453.96,
         "buyerLastName": "Harrison"
@@ -1373,6 +1357,22 @@
     ]
   },
   {
+    "lastName": "Harrison",
+    "age": 18,
+    "soldProducts": [
+      {
+        "name": "Amitriptyline Hydrochloride",
+        "price": 1453.96,
+        "buyerLastName": "Harrison"
+      },
+      {
+        "name": "Echinacea Quartz Gum Support",
+        "price": 570.08,
+        "buyerLastName": "Harrison"
+      }
+    ]
+  },
+  {
     "firstName": "Nicole",
     "lastName": "Harris",
     "age": 43,
@@ -1414,31 +1414,6 @@
     "age": 28,
     "soldProducts": [
       {
-        "name": "ESIKA",
-        "price": 879.37,
-        "buyerFirstName": "Nicole",
-        "buyerLastName": "Martinez"
-      },
-      {
-        "name": "ENBREL",
-        "price": 673.97,
-        "buyerFirstName": "Nicole",
-        "buyerLastName": "Martinez"
-      },
-      {
-        "name": "Lorazepam",
-        "price": 1134.96,
-        "buyerFirstName": "Nicole",
-        "buyerLastName": "Martinez"
-      }
-    ]
-  },
-  {
-    "firstName": "Nicole",
-    "lastName": "Martinez",
-    "age": 28,
-    "soldProducts": [
-      {
         "name": "Lorazepam",
         "price": 1134.96,
         "buyerFirstName": "Nicole",
@@ -1464,14 +1439,14 @@
     "age": 28,
     "soldProducts": [
       {
-        "name": "ESIKA",
-        "price": 879.37,
+        "name": "Lorazepam",
+        "price": 1134.96,
         "buyerFirstName": "Nicole",
         "buyerLastName": "Martinez"
       },
       {
-        "name": "Lorazepam",
-        "price": 1134.96,
+        "name": "ESIKA",
+        "price": 879.37,
         "buyerFirstName": "Nicole",
         "buyerLastName": "Martinez"
       },
@@ -1489,14 +1464,39 @@
     "age": 28,
     "soldProducts": [
       {
-        "name": "ESIKA",
-        "price": 879.37,
+        "name": "Lorazepam",
+        "price": 1134.96,
         "buyerFirstName": "Nicole",
         "buyerLastName": "Martinez"
       },
       {
         "name": "ENBREL",
         "price": 673.97,
+        "buyerFirstName": "Nicole",
+        "buyerLastName": "Martinez"
+      },
+      {
+        "name": "ESIKA",
+        "price": 879.37,
+        "buyerFirstName": "Nicole",
+        "buyerLastName": "Martinez"
+      }
+    ]
+  },
+  {
+    "firstName": "Nicole",
+    "lastName": "Martinez",
+    "age": 28,
+    "soldProducts": [
+      {
+        "name": "ENBREL",
+        "price": 673.97,
+        "buyerFirstName": "Nicole",
+        "buyerLastName": "Martinez"
+      },
+      {
+        "name": "ESIKA",
+        "price": 879.37,
         "buyerFirstName": "Nicole",
         "buyerLastName": "Martinez"
       },
@@ -1513,13 +1513,13 @@
     "age": 0,
     "soldProducts": [
       {
-        "name": "EMEND",
-        "price": 1365.51,
+        "name": "Ondansetron",
+        "price": 1249.76,
         "buyerLastName": "Baker"
       },
       {
-        "name": "Ondansetron",
-        "price": 1249.76,
+        "name": "EMEND",
+        "price": 1365.51,
         "buyerLastName": "Baker"
       },
       {
@@ -1534,39 +1534,18 @@
     "age": 0,
     "soldProducts": [
       {
-        "name": "Allopurinol",
-        "price": 336.81,
-        "buyerLastName": "Baker"
-      },
-      {
         "name": "Ondansetron",
         "price": 1249.76,
         "buyerLastName": "Baker"
       },
       {
-        "name": "EMEND",
-        "price": 1365.51,
-        "buyerLastName": "Baker"
-      }
-    ]
-  },
-  {
-    "lastName": "Baker",
-    "age": 0,
-    "soldProducts": [
-      {
-        "name": "Ondansetron",
-        "price": 1249.76,
-        "buyerLastName": "Baker"
-      },
-      {
-        "name": "EMEND",
-        "price": 1365.51,
-        "buyerLastName": "Baker"
-      },
-      {
         "name": "Allopurinol",
         "price": 336.81,
+        "buyerLastName": "Baker"
+      },
+      {
+        "name": "EMEND",
+        "price": 1365.51,
         "buyerLastName": "Baker"
       }
     ]
@@ -1618,13 +1597,34 @@
     "age": 0,
     "soldProducts": [
       {
-        "name": "Ondansetron",
-        "price": 1249.76,
+        "name": "EMEND",
+        "price": 1365.51,
         "buyerLastName": "Baker"
       },
       {
         "name": "Allopurinol",
         "price": 336.81,
+        "buyerLastName": "Baker"
+      },
+      {
+        "name": "Ondansetron",
+        "price": 1249.76,
+        "buyerLastName": "Baker"
+      }
+    ]
+  },
+  {
+    "lastName": "Baker",
+    "age": 0,
+    "soldProducts": [
+      {
+        "name": "Allopurinol",
+        "price": 336.81,
+        "buyerLastName": "Baker"
+      },
+      {
+        "name": "Ondansetron",
+        "price": 1249.76,
         "buyerLastName": "Baker"
       },
       {
@@ -1640,8 +1640,8 @@
     "age": 72,
     "soldProducts": [
       {
-        "name": "Metoprolol Tartrate",
-        "price": 1405.74,
+        "name": "Americaine",
+        "price": 1165.75,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Cooper"
       },
@@ -1652,8 +1652,8 @@
         "buyerLastName": "Cooper"
       },
       {
-        "name": "Americaine",
-        "price": 1165.75,
+        "name": "Metoprolol Tartrate",
+        "price": 1405.74,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Cooper"
       }
@@ -1671,37 +1671,16 @@
         "buyerLastName": "Cooper"
       },
       {
-        "name": "Metoprolol Tartrate",
-        "price": 1405.74,
-        "buyerFirstName": "Patricia",
-        "buyerLastName": "Cooper"
-      },
-      {
         "name": "Americaine",
         "price": 1165.75,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Cooper"
-      }
-    ]
-  },
-  {
-    "lastName": "Thompson",
-    "age": 46,
-    "soldProducts": [
-      {
-        "name": "PRIMAXIN",
-        "price": 686.66,
-        "buyerLastName": "Thompson"
       },
       {
-        "name": "TYLENOL COLD MULTI-SYMPTOM DAYTIME",
-        "price": 1010.81,
-        "buyerLastName": "Thompson"
-      },
-      {
-        "name": "Imipramine Hydrochloride",
-        "price": 648.69,
-        "buyerLastName": "Thompson"
+        "name": "Metoprolol Tartrate",
+        "price": 1405.74,
+        "buyerFirstName": "Patricia",
+        "buyerLastName": "Cooper"
       }
     ]
   },
@@ -1715,6 +1694,27 @@
         "buyerLastName": "Thompson"
       },
       {
+        "name": "PRIMAXIN",
+        "price": 686.66,
+        "buyerLastName": "Thompson"
+      },
+      {
+        "name": "TYLENOL COLD MULTI-SYMPTOM DAYTIME",
+        "price": 1010.81,
+        "buyerLastName": "Thompson"
+      }
+    ]
+  },
+  {
+    "lastName": "Thompson",
+    "age": 46,
+    "soldProducts": [
+      {
+        "name": "Imipramine Hydrochloride",
+        "price": 648.69,
+        "buyerLastName": "Thompson"
+      },
+      {
         "name": "TYLENOL COLD MULTI-SYMPTOM DAYTIME",
         "price": 1010.81,
         "buyerLastName": "Thompson"
@@ -1731,13 +1731,13 @@
     "age": 46,
     "soldProducts": [
       {
-        "name": "PRIMAXIN",
-        "price": 686.66,
+        "name": "TYLENOL COLD MULTI-SYMPTOM DAYTIME",
+        "price": 1010.81,
         "buyerLastName": "Thompson"
       },
       {
-        "name": "TYLENOL COLD MULTI-SYMPTOM DAYTIME",
-        "price": 1010.81,
+        "name": "PRIMAXIN",
+        "price": 686.66,
         "buyerLastName": "Thompson"
       },
       {
@@ -1759,12 +1759,6 @@
         "buyerLastName": "Stevens"
       },
       {
-        "name": "Dawn Ultra Antibacterial Hand",
-        "price": 969.86,
-        "buyerFirstName": "Ann",
-        "buyerLastName": "Stevens"
-      },
-      {
         "name": "Ampicillin",
         "price": 674.63,
         "buyerFirstName": "Ann",
@@ -1773,6 +1767,12 @@
       {
         "name": "up and up temporary minor arthritis pain relief",
         "price": 1085.78,
+        "buyerFirstName": "Ann",
+        "buyerLastName": "Stevens"
+      },
+      {
+        "name": "Dawn Ultra Antibacterial Hand",
+        "price": 969.86,
         "buyerFirstName": "Ann",
         "buyerLastName": "Stevens"
       }
@@ -1784,8 +1784,8 @@
     "age": 0,
     "soldProducts": [
       {
-        "name": "Dawn Ultra Antibacterial Hand",
-        "price": 969.86,
+        "name": "Ampicillin",
+        "price": 674.63,
         "buyerFirstName": "Ann",
         "buyerLastName": "Stevens"
       },
@@ -1802,8 +1802,8 @@
         "buyerLastName": "Stevens"
       },
       {
-        "name": "Ampicillin",
-        "price": 674.63,
+        "name": "Dawn Ultra Antibacterial Hand",
+        "price": 969.86,
         "buyerFirstName": "Ann",
         "buyerLastName": "Stevens"
       }
@@ -1840,8 +1840,8 @@
     "age": 63,
     "soldProducts": [
       {
-        "name": "CEDAX",
-        "price": 342.86,
+        "name": "XtraCare Foam Antibacterial Hand Wash",
+        "price": 1251.97,
         "buyerFirstName": "Christina",
         "buyerLastName": "Patterson"
       },
@@ -1852,8 +1852,8 @@
         "buyerLastName": "Patterson"
       },
       {
-        "name": "XtraCare Foam Antibacterial Hand Wash",
-        "price": 1251.97,
+        "name": "CEDAX",
+        "price": 342.86,
         "buyerFirstName": "Christina",
         "buyerLastName": "Patterson"
       }
@@ -1865,12 +1865,6 @@
     "age": 63,
     "soldProducts": [
       {
-        "name": "Budpak Hemorrhoid Anesthetic",
-        "price": 1499.29,
-        "buyerFirstName": "Christina",
-        "buyerLastName": "Patterson"
-      },
-      {
         "name": "CEDAX",
         "price": 342.86,
         "buyerFirstName": "Christina",
@@ -1879,6 +1873,12 @@
       {
         "name": "XtraCare Foam Antibacterial Hand Wash",
         "price": 1251.97,
+        "buyerFirstName": "Christina",
+        "buyerLastName": "Patterson"
+      },
+      {
+        "name": "Budpak Hemorrhoid Anesthetic",
+        "price": 1499.29,
         "buyerFirstName": "Christina",
         "buyerLastName": "Patterson"
       }
@@ -1890,14 +1890,14 @@
     "age": 33,
     "soldProducts": [
       {
-        "name": "Ketorolac Tromethamine",
-        "price": 608.18,
+        "name": "EPZICOM",
+        "price": 895.65,
         "buyerFirstName": "Sarah",
         "buyerLastName": "Day"
       },
       {
-        "name": "EPZICOM",
-        "price": 895.65,
+        "name": "Ketorolac Tromethamine",
+        "price": 608.18,
         "buyerFirstName": "Sarah",
         "buyerLastName": "Day"
       }
@@ -1909,6 +1909,12 @@
     "age": 0,
     "soldProducts": [
       {
+        "name": "SUMATRIPTAN SUCCINATE",
+        "price": 1265.94,
+        "buyerFirstName": "Jennifer",
+        "buyerLastName": "Riley"
+      },
+      {
         "name": "Benazepril Hydrochloride and Hydrochlorothiazide",
         "price": 1187.27,
         "buyerFirstName": "Jennifer",
@@ -1919,12 +1925,6 @@
         "price": 1293.09,
         "buyerFirstName": "Jennifer",
         "buyerLastName": "Riley"
-      },
-      {
-        "name": "SUMATRIPTAN SUCCINATE",
-        "price": 1265.94,
-        "buyerFirstName": "Jennifer",
-        "buyerLastName": "Riley"
       }
     ]
   },
@@ -1934,14 +1934,14 @@
     "age": 25,
     "soldProducts": [
       {
-        "name": "Buprenorphine hydrochloride",
-        "price": 391.05,
+        "name": "DIPYRIDAMOLE",
+        "price": 1150.67,
         "buyerFirstName": "Jacqueline",
         "buyerLastName": "Perez"
       },
       {
-        "name": "DIPYRIDAMOLE",
-        "price": 1150.67,
+        "name": "Buprenorphine hydrochloride",
+        "price": 391.05,
         "buyerFirstName": "Jacqueline",
         "buyerLastName": "Perez"
       }
@@ -1953,14 +1953,14 @@
     "age": 25,
     "soldProducts": [
       {
-        "name": "Buprenorphine hydrochloride",
-        "price": 391.05,
+        "name": "DIPYRIDAMOLE",
+        "price": 1150.67,
         "buyerFirstName": "Jacqueline",
         "buyerLastName": "Perez"
       },
       {
-        "name": "DIPYRIDAMOLE",
-        "price": 1150.67,
+        "name": "Buprenorphine hydrochloride",
+        "price": 391.05,
         "buyerFirstName": "Jacqueline",
         "buyerLastName": "Perez"
       }
@@ -2010,14 +2010,14 @@
     "age": 25,
     "soldProducts": [
       {
-        "name": "DIPYRIDAMOLE",
-        "price": 1150.67,
+        "name": "Buprenorphine hydrochloride",
+        "price": 391.05,
         "buyerFirstName": "Jacqueline",
         "buyerLastName": "Perez"
       },
       {
-        "name": "Buprenorphine hydrochloride",
-        "price": 391.05,
+        "name": "DIPYRIDAMOLE",
+        "price": 1150.67,
         "buyerFirstName": "Jacqueline",
         "buyerLastName": "Perez"
       }
@@ -2055,8 +2055,8 @@
     "age": 41,
     "soldProducts": [
       {
-        "name": "leader pain reliever",
-        "price": 1179.79,
+        "name": "Effervescent Cold Relief",
+        "price": 1436.07,
         "buyerFirstName": "Joshua",
         "buyerLastName": "Murray"
       },
@@ -2067,8 +2067,8 @@
         "buyerLastName": "Murray"
       },
       {
-        "name": "Effervescent Cold Relief",
-        "price": 1436.07,
+        "name": "leader pain reliever",
+        "price": 1179.79,
         "buyerFirstName": "Joshua",
         "buyerLastName": "Murray"
       }
@@ -2080,8 +2080,8 @@
     "age": 41,
     "soldProducts": [
       {
-        "name": "leader pain reliever",
-        "price": 1179.79,
+        "name": "Glipizide",
+        "price": 621.78,
         "buyerFirstName": "Joshua",
         "buyerLastName": "Murray"
       },
@@ -2092,8 +2092,8 @@
         "buyerLastName": "Murray"
       },
       {
-        "name": "Glipizide",
-        "price": 621.78,
+        "name": "leader pain reliever",
+        "price": 1179.79,
         "buyerFirstName": "Joshua",
         "buyerLastName": "Murray"
       }
@@ -2105,8 +2105,14 @@
     "age": 0,
     "soldProducts": [
       {
-        "name": "Enchanted Moments Mistletoe Kisses Hand Sanitizer",
-        "price": 384.99,
+        "name": "IOPE RETIGEN MOISTURE TWIN CAKE NO.21",
+        "price": 1257.71,
+        "buyerFirstName": "Jean",
+        "buyerLastName": "Henry"
+      },
+      {
+        "name": "Leflunomide",
+        "price": 312.85,
         "buyerFirstName": "Jean",
         "buyerLastName": "Henry"
       },
@@ -2123,14 +2129,8 @@
         "buyerLastName": "Henry"
       },
       {
-        "name": "IOPE RETIGEN MOISTURE TWIN CAKE NO.21",
-        "price": 1257.71,
-        "buyerFirstName": "Jean",
-        "buyerLastName": "Henry"
-      },
-      {
-        "name": "Leflunomide",
-        "price": 312.85,
+        "name": "Enchanted Moments Mistletoe Kisses Hand Sanitizer",
+        "price": 384.99,
         "buyerFirstName": "Jean",
         "buyerLastName": "Henry"
       }
@@ -2142,8 +2142,8 @@
     "age": 0,
     "soldProducts": [
       {
-        "name": "IOPE RETIGEN MOISTURE TWIN CAKE NO.21",
-        "price": 1257.71,
+        "name": "Leflunomide",
+        "price": 312.85,
         "buyerFirstName": "Jean",
         "buyerLastName": "Henry"
       },
@@ -2154,20 +2154,20 @@
         "buyerLastName": "Henry"
       },
       {
-        "name": "Alternaria alternata",
-        "price": 61.24,
-        "buyerFirstName": "Jean",
-        "buyerLastName": "Henry"
-      },
-      {
         "name": "CVS Therapeutic Menthol Pain Reliever",
         "price": 1033.42,
         "buyerFirstName": "Jean",
         "buyerLastName": "Henry"
       },
       {
-        "name": "Leflunomide",
-        "price": 312.85,
+        "name": "IOPE RETIGEN MOISTURE TWIN CAKE NO.21",
+        "price": 1257.71,
+        "buyerFirstName": "Jean",
+        "buyerLastName": "Henry"
+      },
+      {
+        "name": "Alternaria alternata",
+        "price": 61.24,
         "buyerFirstName": "Jean",
         "buyerLastName": "Henry"
       }
@@ -2197,14 +2197,14 @@
         "buyerLastName": "Henry"
       },
       {
-        "name": "Alternaria alternata",
-        "price": 61.24,
+        "name": "IOPE RETIGEN MOISTURE TWIN CAKE NO.21",
+        "price": 1257.71,
         "buyerFirstName": "Jean",
         "buyerLastName": "Henry"
       },
       {
-        "name": "IOPE RETIGEN MOISTURE TWIN CAKE NO.21",
-        "price": 1257.71,
+        "name": "Alternaria alternata",
+        "price": 61.24,
         "buyerFirstName": "Jean",
         "buyerLastName": "Henry"
       }
@@ -2216,20 +2216,14 @@
     "age": 0,
     "soldProducts": [
       {
-        "name": "Alternaria alternata",
-        "price": 61.24,
-        "buyerFirstName": "Jean",
-        "buyerLastName": "Henry"
-      },
-      {
         "name": "Leflunomide",
         "price": 312.85,
         "buyerFirstName": "Jean",
         "buyerLastName": "Henry"
       },
       {
-        "name": "CVS Therapeutic Menthol Pain Reliever",
-        "price": 1033.42,
+        "name": "Enchanted Moments Mistletoe Kisses Hand Sanitizer",
+        "price": 384.99,
         "buyerFirstName": "Jean",
         "buyerLastName": "Henry"
       },
@@ -2240,8 +2234,14 @@
         "buyerLastName": "Henry"
       },
       {
-        "name": "Enchanted Moments Mistletoe Kisses Hand Sanitizer",
-        "price": 384.99,
+        "name": "Alternaria alternata",
+        "price": 61.24,
+        "buyerFirstName": "Jean",
+        "buyerLastName": "Henry"
+      },
+      {
+        "name": "CVS Therapeutic Menthol Pain Reliever",
+        "price": 1033.42,
         "buyerFirstName": "Jean",
         "buyerLastName": "Henry"
       }
@@ -2253,6 +2253,30 @@
     "age": 46,
     "soldProducts": [
       {
+        "name": "Propranolol Hydrochloride",
+        "price": 546.95,
+        "buyerFirstName": "Diana",
+        "buyerLastName": "Harvey"
+      },
+      {
+        "name": "Growing Pains",
+        "price": 1077.37,
+        "buyerFirstName": "Diana",
+        "buyerLastName": "Harvey"
+      },
+      {
+        "name": "Cold and Cough",
+        "price": 218.14,
+        "buyerFirstName": "Diana",
+        "buyerLastName": "Harvey"
+      },
+      {
+        "name": "Ibuprofen",
+        "price": 1305.96,
+        "buyerFirstName": "Diana",
+        "buyerLastName": "Harvey"
+      },
+      {
         "name": "Gemcitabine",
         "price": 594.79,
         "buyerFirstName": "Diana",
@@ -2263,10 +2287,29 @@
         "price": 324.66,
         "buyerFirstName": "Diana",
         "buyerLastName": "Harvey"
+      }
+    ]
+  },
+  {
+    "firstName": "Diana",
+    "lastName": "Harvey",
+    "age": 46,
+    "soldProducts": [
+      {
+        "name": "Ibuprofen",
+        "price": 1305.96,
+        "buyerFirstName": "Diana",
+        "buyerLastName": "Harvey"
       },
       {
-        "name": "Growing Pains",
-        "price": 1077.37,
+        "name": "Gemcitabine",
+        "price": 594.79,
+        "buyerFirstName": "Diana",
+        "buyerLastName": "Harvey"
+      },
+      {
+        "name": "ANXIETY/STRESS RELIEF",
+        "price": 324.66,
         "buyerFirstName": "Diana",
         "buyerLastName": "Harvey"
       },
@@ -2283,51 +2326,8 @@
         "buyerLastName": "Harvey"
       },
       {
-        "name": "Ibuprofen",
-        "price": 1305.96,
-        "buyerFirstName": "Diana",
-        "buyerLastName": "Harvey"
-      }
-    ]
-  },
-  {
-    "firstName": "Diana",
-    "lastName": "Harvey",
-    "age": 46,
-    "soldProducts": [
-      {
-        "name": "Gemcitabine",
-        "price": 594.79,
-        "buyerFirstName": "Diana",
-        "buyerLastName": "Harvey"
-      },
-      {
-        "name": "Cold and Cough",
-        "price": 218.14,
-        "buyerFirstName": "Diana",
-        "buyerLastName": "Harvey"
-      },
-      {
-        "name": "ANXIETY/STRESS RELIEF",
-        "price": 324.66,
-        "buyerFirstName": "Diana",
-        "buyerLastName": "Harvey"
-      },
-      {
         "name": "Growing Pains",
         "price": 1077.37,
-        "buyerFirstName": "Diana",
-        "buyerLastName": "Harvey"
-      },
-      {
-        "name": "Propranolol Hydrochloride",
-        "price": 546.95,
-        "buyerFirstName": "Diana",
-        "buyerLastName": "Harvey"
-      },
-      {
-        "name": "Ibuprofen",
-        "price": 1305.96,
         "buyerFirstName": "Diana",
         "buyerLastName": "Harvey"
       }
@@ -2358,14 +2358,14 @@
     "age": 41,
     "soldProducts": [
       {
-        "name": "Warfarin Sodium",
-        "price": 138.83,
+        "name": "Retin-A MICRO",
+        "price": 995.98,
         "buyerFirstName": "Emily",
         "buyerLastName": "Parker"
       },
       {
-        "name": "Retin-A MICRO",
-        "price": 995.98,
+        "name": "Warfarin Sodium",
+        "price": 138.83,
         "buyerFirstName": "Emily",
         "buyerLastName": "Parker"
       }
@@ -2396,14 +2396,8 @@
     "age": 74,
     "soldProducts": [
       {
-        "name": "Etoposide",
-        "price": 1483.96,
-        "buyerFirstName": "Paula",
-        "buyerLastName": "Hill"
-      },
-      {
-        "name": "Fair Foundation SPF 15",
-        "price": 1394.24,
+        "name": "Flumazenil",
+        "price": 1151.37,
         "buyerFirstName": "Paula",
         "buyerLastName": "Hill"
       },
@@ -2414,14 +2408,20 @@
         "buyerLastName": "Hill"
       },
       {
-        "name": "Flumazenil",
-        "price": 1151.37,
+        "name": "pain relief",
+        "price": 938.23,
         "buyerFirstName": "Paula",
         "buyerLastName": "Hill"
       },
       {
-        "name": "pain relief",
-        "price": 938.23,
+        "name": "Fair Foundation SPF 15",
+        "price": 1394.24,
+        "buyerFirstName": "Paula",
+        "buyerLastName": "Hill"
+      },
+      {
+        "name": "Etoposide",
+        "price": 1483.96,
         "buyerFirstName": "Paula",
         "buyerLastName": "Hill"
       }
@@ -2433,8 +2433,8 @@
     "age": 74,
     "soldProducts": [
       {
-        "name": "Etoposide",
-        "price": 1483.96,
+        "name": "Dover Aminophen",
+        "price": 192.07,
         "buyerFirstName": "Paula",
         "buyerLastName": "Hill"
       },
@@ -2451,16 +2451,16 @@
         "buyerLastName": "Hill"
       },
       {
+        "name": "Etoposide",
+        "price": 1483.96,
+        "buyerFirstName": "Paula",
+        "buyerLastName": "Hill"
+      },
+      {
         "name": "Flumazenil",
         "price": 1151.37,
         "buyerFirstName": "Paula",
         "buyerLastName": "Hill"
-      },
-      {
-        "name": "Dover Aminophen",
-        "price": 192.07,
-        "buyerFirstName": "Paula",
-        "buyerLastName": "Hill"
       }
     ]
   },
@@ -2476,39 +2476,14 @@
         "buyerLastName": "Parker"
       },
       {
-        "name": "Cefadroxil",
-        "price": 1302.20,
-        "buyerFirstName": "Billy",
-        "buyerLastName": "Parker"
-      },
-      {
         "name": "Allopurinol",
         "price": 518.50,
-        "buyerFirstName": "Billy",
-        "buyerLastName": "Parker"
-      }
-    ]
-  },
-  {
-    "firstName": "Billy",
-    "lastName": "Parker",
-    "age": 68,
-    "soldProducts": [
-      {
-        "name": "Amlodipine Besylate",
-        "price": 122.57,
         "buyerFirstName": "Billy",
         "buyerLastName": "Parker"
       },
       {
         "name": "Cefadroxil",
         "price": 1302.20,
-        "buyerFirstName": "Billy",
-        "buyerLastName": "Parker"
-      },
-      {
-        "name": "Allopurinol",
-        "price": 518.50,
         "buyerFirstName": "Billy",
         "buyerLastName": "Parker"
       }
@@ -2534,6 +2509,31 @@
       {
         "name": "Cefadroxil",
         "price": 1302.20,
+        "buyerFirstName": "Billy",
+        "buyerLastName": "Parker"
+      }
+    ]
+  },
+  {
+    "firstName": "Billy",
+    "lastName": "Parker",
+    "age": 68,
+    "soldProducts": [
+      {
+        "name": "Cefadroxil",
+        "price": 1302.20,
+        "buyerFirstName": "Billy",
+        "buyerLastName": "Parker"
+      },
+      {
+        "name": "Amlodipine Besylate",
+        "price": 122.57,
+        "buyerFirstName": "Billy",
+        "buyerLastName": "Parker"
+      },
+      {
+        "name": "Allopurinol",
+        "price": 518.50,
         "buyerFirstName": "Billy",
         "buyerLastName": "Parker"
       }
@@ -2672,43 +2672,6 @@
     "age": 51,
     "soldProducts": [
       {
-        "name": "AVANDAMET",
-        "price": 632.08,
-        "buyerFirstName": "Kathy",
-        "buyerLastName": "Gilbert"
-      },
-      {
-        "name": "allergy eye",
-        "price": 426.91,
-        "buyerFirstName": "Kathy",
-        "buyerLastName": "Gilbert"
-      },
-      {
-        "name": "Irbesartan and Hydrochlorothiazide",
-        "price": 308.30,
-        "buyerFirstName": "Kathy",
-        "buyerLastName": "Gilbert"
-      },
-      {
-        "name": "Azithromycin",
-        "price": 813.87,
-        "buyerFirstName": "Kathy",
-        "buyerLastName": "Gilbert"
-      }
-    ]
-  },
-  {
-    "firstName": "Kathy",
-    "lastName": "Gilbert",
-    "age": 51,
-    "soldProducts": [
-      {
-        "name": "Azithromycin",
-        "price": 813.87,
-        "buyerFirstName": "Kathy",
-        "buyerLastName": "Gilbert"
-      },
-      {
         "name": "Irbesartan and Hydrochlorothiazide",
         "price": 308.30,
         "buyerFirstName": "Kathy",
@@ -2717,6 +2680,12 @@
       {
         "name": "allergy eye",
         "price": 426.91,
+        "buyerFirstName": "Kathy",
+        "buyerLastName": "Gilbert"
+      },
+      {
+        "name": "Azithromycin",
+        "price": 813.87,
         "buyerFirstName": "Kathy",
         "buyerLastName": "Gilbert"
       },
@@ -2734,6 +2703,74 @@
     "age": 51,
     "soldProducts": [
       {
+        "name": "AVANDAMET",
+        "price": 632.08,
+        "buyerFirstName": "Kathy",
+        "buyerLastName": "Gilbert"
+      },
+      {
+        "name": "Irbesartan and Hydrochlorothiazide",
+        "price": 308.30,
+        "buyerFirstName": "Kathy",
+        "buyerLastName": "Gilbert"
+      },
+      {
+        "name": "Azithromycin",
+        "price": 813.87,
+        "buyerFirstName": "Kathy",
+        "buyerLastName": "Gilbert"
+      },
+      {
+        "name": "allergy eye",
+        "price": 426.91,
+        "buyerFirstName": "Kathy",
+        "buyerLastName": "Gilbert"
+      }
+    ]
+  },
+  {
+    "firstName": "Kathy",
+    "lastName": "Gilbert",
+    "age": 51,
+    "soldProducts": [
+      {
+        "name": "Azithromycin",
+        "price": 813.87,
+        "buyerFirstName": "Kathy",
+        "buyerLastName": "Gilbert"
+      },
+      {
+        "name": "AVANDAMET",
+        "price": 632.08,
+        "buyerFirstName": "Kathy",
+        "buyerLastName": "Gilbert"
+      },
+      {
+        "name": "Irbesartan and Hydrochlorothiazide",
+        "price": 308.30,
+        "buyerFirstName": "Kathy",
+        "buyerLastName": "Gilbert"
+      },
+      {
+        "name": "allergy eye",
+        "price": 426.91,
+        "buyerFirstName": "Kathy",
+        "buyerLastName": "Gilbert"
+      }
+    ]
+  },
+  {
+    "firstName": "Kathy",
+    "lastName": "Gilbert",
+    "age": 51,
+    "soldProducts": [
+      {
+        "name": "AVANDAMET",
+        "price": 632.08,
+        "buyerFirstName": "Kathy",
+        "buyerLastName": "Gilbert"
+      },
+      {
         "name": "allergy eye",
         "price": 426.91,
         "buyerFirstName": "Kathy",
@@ -2742,6 +2779,31 @@
       {
         "name": "Azithromycin",
         "price": 813.87,
+        "buyerFirstName": "Kathy",
+        "buyerLastName": "Gilbert"
+      },
+      {
+        "name": "Irbesartan and Hydrochlorothiazide",
+        "price": 308.30,
+        "buyerFirstName": "Kathy",
+        "buyerLastName": "Gilbert"
+      }
+    ]
+  },
+  {
+    "firstName": "Kathy",
+    "lastName": "Gilbert",
+    "age": 51,
+    "soldProducts": [
+      {
+        "name": "Azithromycin",
+        "price": 813.87,
+        "buyerFirstName": "Kathy",
+        "buyerLastName": "Gilbert"
+      },
+      {
+        "name": "allergy eye",
+        "price": 426.91,
         "buyerFirstName": "Kathy",
         "buyerLastName": "Gilbert"
       },
@@ -2760,64 +2822,52 @@
     ]
   },
   {
-    "firstName": "Kathy",
-    "lastName": "Gilbert",
-    "age": 51,
+    "firstName": "Fred",
+    "lastName": "Barnes",
+    "age": 0,
     "soldProducts": [
       {
-        "name": "Irbesartan and Hydrochlorothiazide",
-        "price": 308.30,
-        "buyerFirstName": "Kathy",
-        "buyerLastName": "Gilbert"
+        "name": "Pollens - Weeds and Garden Plants, Nettle Urtica dioica",
+        "price": 782.77,
+        "buyerFirstName": "Fred",
+        "buyerLastName": "Barnes"
       },
       {
-        "name": "allergy eye",
-        "price": 426.91,
-        "buyerFirstName": "Kathy",
-        "buyerLastName": "Gilbert"
+        "name": "Leg Cramp Relief",
+        "price": 1345.69,
+        "buyerFirstName": "Fred",
+        "buyerLastName": "Barnes"
       },
       {
-        "name": "AVANDAMET",
-        "price": 632.08,
-        "buyerFirstName": "Kathy",
-        "buyerLastName": "Gilbert"
-      },
-      {
-        "name": "Azithromycin",
-        "price": 813.87,
-        "buyerFirstName": "Kathy",
-        "buyerLastName": "Gilbert"
+        "name": "Aspergillus repens",
+        "price": 1231.42,
+        "buyerFirstName": "Fred",
+        "buyerLastName": "Barnes"
       }
     ]
   },
   {
-    "firstName": "Kathy",
-    "lastName": "Gilbert",
-    "age": 51,
+    "firstName": "Fred",
+    "lastName": "Barnes",
+    "age": 0,
     "soldProducts": [
       {
-        "name": "Irbesartan and Hydrochlorothiazide",
-        "price": 308.30,
-        "buyerFirstName": "Kathy",
-        "buyerLastName": "Gilbert"
+        "name": "Aspergillus repens",
+        "price": 1231.42,
+        "buyerFirstName": "Fred",
+        "buyerLastName": "Barnes"
       },
       {
-        "name": "Azithromycin",
-        "price": 813.87,
-        "buyerFirstName": "Kathy",
-        "buyerLastName": "Gilbert"
+        "name": "Leg Cramp Relief",
+        "price": 1345.69,
+        "buyerFirstName": "Fred",
+        "buyerLastName": "Barnes"
       },
       {
-        "name": "allergy eye",
-        "price": 426.91,
-        "buyerFirstName": "Kathy",
-        "buyerLastName": "Gilbert"
-      },
-      {
-        "name": "AVANDAMET",
-        "price": 632.08,
-        "buyerFirstName": "Kathy",
-        "buyerLastName": "Gilbert"
+        "name": "Pollens - Weeds and Garden Plants, Nettle Urtica dioica",
+        "price": 782.77,
+        "buyerFirstName": "Fred",
+        "buyerLastName": "Barnes"
       }
     ]
   },
@@ -2852,31 +2902,6 @@
     "age": 0,
     "soldProducts": [
       {
-        "name": "Pollens - Weeds and Garden Plants, Nettle Urtica dioica",
-        "price": 782.77,
-        "buyerFirstName": "Fred",
-        "buyerLastName": "Barnes"
-      },
-      {
-        "name": "Aspergillus repens",
-        "price": 1231.42,
-        "buyerFirstName": "Fred",
-        "buyerLastName": "Barnes"
-      },
-      {
-        "name": "Leg Cramp Relief",
-        "price": 1345.69,
-        "buyerFirstName": "Fred",
-        "buyerLastName": "Barnes"
-      }
-    ]
-  },
-  {
-    "firstName": "Fred",
-    "lastName": "Barnes",
-    "age": 0,
-    "soldProducts": [
-      {
         "name": "Leg Cramp Relief",
         "price": 1345.69,
         "buyerFirstName": "Fred",
@@ -2891,31 +2916,6 @@
       {
         "name": "Pollens - Weeds and Garden Plants, Nettle Urtica dioica",
         "price": 782.77,
-        "buyerFirstName": "Fred",
-        "buyerLastName": "Barnes"
-      }
-    ]
-  },
-  {
-    "firstName": "Fred",
-    "lastName": "Barnes",
-    "age": 0,
-    "soldProducts": [
-      {
-        "name": "Pollens - Weeds and Garden Plants, Nettle Urtica dioica",
-        "price": 782.77,
-        "buyerFirstName": "Fred",
-        "buyerLastName": "Barnes"
-      },
-      {
-        "name": "Aspergillus repens",
-        "price": 1231.42,
-        "buyerFirstName": "Fred",
-        "buyerLastName": "Barnes"
-      },
-      {
-        "name": "Leg Cramp Relief",
-        "price": 1345.69,
         "buyerFirstName": "Fred",
         "buyerLastName": "Barnes"
       }
@@ -2933,14 +2933,14 @@
         "buyerLastName": "Parker"
       },
       {
-        "name": "Laser Block 100",
-        "price": 1135.43,
+        "name": "Aspirin",
+        "price": 925.45,
         "buyerFirstName": "Anna",
         "buyerLastName": "Parker"
       },
       {
-        "name": "Aspirin",
-        "price": 925.45,
+        "name": "Laser Block 100",
+        "price": 1135.43,
         "buyerFirstName": "Anna",
         "buyerLastName": "Parker"
       }
@@ -3042,8 +3042,8 @@
     "age": 36,
     "soldProducts": [
       {
-        "name": "Acid Reducer",
-        "price": 1443.51,
+        "name": "Meloxicam",
+        "price": 809.18,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Fuller"
       },
@@ -3054,20 +3054,20 @@
         "buyerLastName": "Fuller"
       },
       {
-        "name": "Meloxicam",
-        "price": 809.18,
+        "name": "Hydralazine Hydrochloride",
+        "price": 1309.72,
+        "buyerFirstName": "Patricia",
+        "buyerLastName": "Fuller"
+      },
+      {
+        "name": "Acid Reducer",
+        "price": 1443.51,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Fuller"
       },
       {
         "name": "ENALAPRIL MALEATE",
         "price": 210.42,
-        "buyerFirstName": "Patricia",
-        "buyerLastName": "Fuller"
-      },
-      {
-        "name": "Hydralazine Hydrochloride",
-        "price": 1309.72,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Fuller"
       },
@@ -3085,14 +3085,14 @@
     "age": 36,
     "soldProducts": [
       {
-        "name": "ENALAPRIL MALEATE",
-        "price": 210.42,
+        "name": "Meloxicam",
+        "price": 809.18,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Fuller"
       },
       {
-        "name": "Meloxicam",
-        "price": 809.18,
+        "name": "Perrigo Benzoyl Peroxide",
+        "price": 873.24,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Fuller"
       },
@@ -3103,20 +3103,20 @@
         "buyerLastName": "Fuller"
       },
       {
-        "name": "Acid Reducer",
-        "price": 1443.51,
-        "buyerFirstName": "Patricia",
-        "buyerLastName": "Fuller"
-      },
-      {
         "name": "Butalbital, Aspirin and Caffeine",
         "price": 1010.98,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Fuller"
       },
       {
-        "name": "Perrigo Benzoyl Peroxide",
-        "price": 873.24,
+        "name": "Acid Reducer",
+        "price": 1443.51,
+        "buyerFirstName": "Patricia",
+        "buyerLastName": "Fuller"
+      },
+      {
+        "name": "ENALAPRIL MALEATE",
+        "price": 210.42,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Fuller"
       }
@@ -3134,14 +3134,14 @@
         "buyerLastName": "Fuller"
       },
       {
-        "name": "Acid Reducer",
-        "price": 1443.51,
+        "name": "Butalbital, Aspirin and Caffeine",
+        "price": 1010.98,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Fuller"
       },
       {
-        "name": "Butalbital, Aspirin and Caffeine",
-        "price": 1010.98,
+        "name": "Hydralazine Hydrochloride",
+        "price": 1309.72,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Fuller"
       },
@@ -3158,8 +3158,8 @@
         "buyerLastName": "Fuller"
       },
       {
-        "name": "Hydralazine Hydrochloride",
-        "price": 1309.72,
+        "name": "Acid Reducer",
+        "price": 1443.51,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Fuller"
       }
@@ -3171,8 +3171,8 @@
     "age": 36,
     "soldProducts": [
       {
-        "name": "Acid Reducer",
-        "price": 1443.51,
+        "name": "Hydralazine Hydrochloride",
+        "price": 1309.72,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Fuller"
       },
@@ -3183,8 +3183,8 @@
         "buyerLastName": "Fuller"
       },
       {
-        "name": "Hydralazine Hydrochloride",
-        "price": 1309.72,
+        "name": "Acid Reducer",
+        "price": 1443.51,
         "buyerFirstName": "Patricia",
         "buyerLastName": "Fuller"
       },
@@ -3214,12 +3214,6 @@
     "age": 18,
     "soldProducts": [
       {
-        "name": "Nevirapine",
-        "price": 1374.72,
-        "buyerFirstName": "Bonnie",
-        "buyerLastName": "Fox"
-      },
-      {
         "name": "Acetic Acid",
         "price": 1060.43,
         "buyerFirstName": "Bonnie",
@@ -3228,25 +3222,6 @@
       {
         "name": "Warfarin Sodium",
         "price": 1379.79,
-        "buyerFirstName": "Bonnie",
-        "buyerLastName": "Fox"
-      }
-    ]
-  },
-  {
-    "firstName": "Bonnie",
-    "lastName": "Fox",
-    "age": 18,
-    "soldProducts": [
-      {
-        "name": "Warfarin Sodium",
-        "price": 1379.79,
-        "buyerFirstName": "Bonnie",
-        "buyerLastName": "Fox"
-      },
-      {
-        "name": "Acetic Acid",
-        "price": 1060.43,
         "buyerFirstName": "Bonnie",
         "buyerLastName": "Fox"
       },
@@ -3264,14 +3239,14 @@
     "age": 18,
     "soldProducts": [
       {
-        "name": "Nevirapine",
-        "price": 1374.72,
+        "name": "Warfarin Sodium",
+        "price": 1379.79,
         "buyerFirstName": "Bonnie",
         "buyerLastName": "Fox"
       },
       {
-        "name": "Warfarin Sodium",
-        "price": 1379.79,
+        "name": "Nevirapine",
+        "price": 1374.72,
         "buyerFirstName": "Bonnie",
         "buyerLastName": "Fox"
       },
@@ -3284,13 +3259,38 @@
     ]
   },
   {
+    "firstName": "Bonnie",
+    "lastName": "Fox",
+    "age": 18,
+    "soldProducts": [
+      {
+        "name": "Acetic Acid",
+        "price": 1060.43,
+        "buyerFirstName": "Bonnie",
+        "buyerLastName": "Fox"
+      },
+      {
+        "name": "Warfarin Sodium",
+        "price": 1379.79,
+        "buyerFirstName": "Bonnie",
+        "buyerLastName": "Fox"
+      },
+      {
+        "name": "Nevirapine",
+        "price": 1374.72,
+        "buyerFirstName": "Bonnie",
+        "buyerLastName": "Fox"
+      }
+    ]
+  },
+  {
     "firstName": "Chris",
     "lastName": "Mitchell",
     "age": 59,
     "soldProducts": [
       {
-        "name": "Etodolac",
-        "price": 1443.13,
+        "name": "smart sense nighttime cold and flu relief",
+        "price": 1101.77,
         "buyerFirstName": "Chris",
         "buyerLastName": "Mitchell"
       },
@@ -3301,8 +3301,8 @@
         "buyerLastName": "Mitchell"
       },
       {
-        "name": "smart sense nighttime cold and flu relief",
-        "price": 1101.77,
+        "name": "Etodolac",
+        "price": 1443.13,
         "buyerFirstName": "Chris",
         "buyerLastName": "Mitchell"
       }
@@ -3339,6 +3339,12 @@
     "age": 59,
     "soldProducts": [
       {
+        "name": "Topex",
+        "price": 1258.49,
+        "buyerFirstName": "Chris",
+        "buyerLastName": "Mitchell"
+      },
+      {
         "name": "smart sense nighttime cold and flu relief",
         "price": 1101.77,
         "buyerFirstName": "Chris",
@@ -3347,12 +3353,6 @@
       {
         "name": "Etodolac",
         "price": 1443.13,
-        "buyerFirstName": "Chris",
-        "buyerLastName": "Mitchell"
-      },
-      {
-        "name": "Topex",
-        "price": 1258.49,
         "buyerFirstName": "Chris",
         "buyerLastName": "Mitchell"
       }
@@ -3363,23 +3363,8 @@
     "age": 0,
     "soldProducts": [
       {
-        "name": "Eszopiclone",
-        "price": 405.03,
-        "buyerLastName": "Cunningham"
-      },
-      {
-        "name": "DIVALPROEX SODIUM",
-        "price": 1287.03,
-        "buyerLastName": "Cunningham"
-      },
-      {
-        "name": "ziprasidone hydrochloride",
-        "price": 628.66,
-        "buyerLastName": "Cunningham"
-      },
-      {
-        "name": "Topical 60 Sec Sodium Fluoride",
-        "price": 1228.84,
+        "name": "Warfarin Sodium",
+        "price": 770.05,
         "buyerLastName": "Cunningham"
       },
       {
@@ -3388,8 +3373,23 @@
         "buyerLastName": "Cunningham"
       },
       {
-        "name": "Warfarin Sodium",
-        "price": 770.05,
+        "name": "Eszopiclone",
+        "price": 405.03,
+        "buyerLastName": "Cunningham"
+      },
+      {
+        "name": "Topical 60 Sec Sodium Fluoride",
+        "price": 1228.84,
+        "buyerLastName": "Cunningham"
+      },
+      {
+        "name": "ziprasidone hydrochloride",
+        "price": 628.66,
+        "buyerLastName": "Cunningham"
+      },
+      {
+        "name": "DIVALPROEX SODIUM",
+        "price": 1287.03,
         "buyerLastName": "Cunningham"
       }
     ]
@@ -3406,6 +3406,18 @@
         "buyerLastName": "Reynolds"
       },
       {
+        "name": "Megestrol Acetate",
+        "price": 976.15,
+        "buyerFirstName": "Arthur",
+        "buyerLastName": "Reynolds"
+      },
+      {
+        "name": "Pleo Ginkgo",
+        "price": 613.65,
+        "buyerFirstName": "Arthur",
+        "buyerLastName": "Reynolds"
+      },
+      {
         "name": "Pioglitazone",
         "price": 306.56,
         "buyerFirstName": "Arthur",
@@ -3420,18 +3432,6 @@
       {
         "name": "Foaming Hand Sanitizer",
         "price": 624.72,
-        "buyerFirstName": "Arthur",
-        "buyerLastName": "Reynolds"
-      },
-      {
-        "name": "Megestrol Acetate",
-        "price": 976.15,
-        "buyerFirstName": "Arthur",
-        "buyerLastName": "Reynolds"
-      },
-      {
-        "name": "Pleo Ginkgo",
-        "price": 613.65,
         "buyerFirstName": "Arthur",
         "buyerLastName": "Reynolds"
       }
@@ -3449,14 +3449,8 @@
         "buyerLastName": "Reynolds"
       },
       {
-        "name": "Foaming Hand Sanitizer",
-        "price": 624.72,
-        "buyerFirstName": "Arthur",
-        "buyerLastName": "Reynolds"
-      },
-      {
-        "name": "Megestrol Acetate",
-        "price": 976.15,
+        "name": "Albuterol",
+        "price": 108.95,
         "buyerFirstName": "Arthur",
         "buyerLastName": "Reynolds"
       },
@@ -3467,14 +3461,20 @@
         "buyerLastName": "Reynolds"
       },
       {
-        "name": "Albuterol",
-        "price": 108.95,
+        "name": "Pioglitazone",
+        "price": 306.56,
         "buyerFirstName": "Arthur",
         "buyerLastName": "Reynolds"
       },
       {
-        "name": "Pioglitazone",
-        "price": 306.56,
+        "name": "Megestrol Acetate",
+        "price": 976.15,
+        "buyerFirstName": "Arthur",
+        "buyerLastName": "Reynolds"
+      },
+      {
+        "name": "Foaming Hand Sanitizer",
+        "price": 624.72,
         "buyerFirstName": "Arthur",
         "buyerLastName": "Reynolds"
       }
@@ -3486,8 +3486,8 @@
     "age": 32,
     "soldProducts": [
       {
-        "name": "Pleo Ginkgo",
-        "price": 613.65,
+        "name": "Pioglitazone",
+        "price": 306.56,
         "buyerFirstName": "Arthur",
         "buyerLastName": "Reynolds"
       },
@@ -3498,26 +3498,26 @@
         "buyerLastName": "Reynolds"
       },
       {
-        "name": "Foaming Hand Sanitizer",
-        "price": 624.72,
-        "buyerFirstName": "Arthur",
-        "buyerLastName": "Reynolds"
-      },
-      {
         "name": "Head and Shoulders Conditioner",
         "price": 1099.59,
         "buyerFirstName": "Arthur",
         "buyerLastName": "Reynolds"
       },
       {
-        "name": "Albuterol",
-        "price": 108.95,
+        "name": "Pleo Ginkgo",
+        "price": 613.65,
         "buyerFirstName": "Arthur",
         "buyerLastName": "Reynolds"
       },
       {
-        "name": "Pioglitazone",
-        "price": 306.56,
+        "name": "Foaming Hand Sanitizer",
+        "price": 624.72,
+        "buyerFirstName": "Arthur",
+        "buyerLastName": "Reynolds"
+      },
+      {
+        "name": "Albuterol",
+        "price": 108.95,
         "buyerFirstName": "Arthur",
         "buyerLastName": "Reynolds"
       }
@@ -3529,6 +3529,12 @@
     "age": 32,
     "soldProducts": [
       {
+        "name": "Megestrol Acetate",
+        "price": 976.15,
+        "buyerFirstName": "Arthur",
+        "buyerLastName": "Reynolds"
+      },
+      {
         "name": "Foaming Hand Sanitizer",
         "price": 624.72,
         "buyerFirstName": "Arthur",
@@ -3543,12 +3549,6 @@
       {
         "name": "Head and Shoulders Conditioner",
         "price": 1099.59,
-        "buyerFirstName": "Arthur",
-        "buyerLastName": "Reynolds"
-      },
-      {
-        "name": "Megestrol Acetate",
-        "price": 976.15,
         "buyerFirstName": "Arthur",
         "buyerLastName": "Reynolds"
       },
@@ -3578,14 +3578,14 @@
         "buyerLastName": "Snyder"
       },
       {
-        "name": "Carbon Dioxide Oxygen Mixture",
-        "price": 95.49,
+        "name": "REYATAZ",
+        "price": 41.97,
         "buyerFirstName": "Thomas",
         "buyerLastName": "Snyder"
       },
       {
-        "name": "Prednisone",
-        "price": 1285.99,
+        "name": "Carbon Dioxide Oxygen Mixture",
+        "price": 95.49,
         "buyerFirstName": "Thomas",
         "buyerLastName": "Snyder"
       },
@@ -3596,8 +3596,8 @@
         "buyerLastName": "Snyder"
       },
       {
-        "name": "REYATAZ",
-        "price": 41.97,
+        "name": "Prednisone",
+        "price": 1285.99,
         "buyerFirstName": "Thomas",
         "buyerLastName": "Snyder"
       }
@@ -3615,8 +3615,8 @@
         "buyerLastName": "Williamson"
       },
       {
-        "name": "Aquafresh",
-        "price": 849.93,
+        "name": "Stila Hydrating Primer Oil-Free SPF 30",
+        "price": 179.28,
         "buyerFirstName": "Marie",
         "buyerLastName": "Williamson"
       },
@@ -3633,8 +3633,8 @@
         "buyerLastName": "Williamson"
       },
       {
-        "name": "Stila Hydrating Primer Oil-Free SPF 30",
-        "price": 179.28,
+        "name": "Aquafresh",
+        "price": 849.93,
         "buyerFirstName": "Marie",
         "buyerLastName": "Williamson"
       }
@@ -3646,20 +3646,20 @@
     "age": 0,
     "soldProducts": [
       {
-        "name": "Stila Hydrating Primer Oil-Free SPF 30",
-        "price": 179.28,
-        "buyerFirstName": "Marie",
-        "buyerLastName": "Williamson"
-      },
-      {
-        "name": "AIR",
-        "price": 581.69,
-        "buyerFirstName": "Marie",
-        "buyerLastName": "Williamson"
-      },
-      {
         "name": "Triamterene and Hydrochlorothiazide",
         "price": 1416.59,
+        "buyerFirstName": "Marie",
+        "buyerLastName": "Williamson"
+      },
+      {
+        "name": "Yellow Jacket hymenoptera venom Venomil Diagnostic",
+        "price": 23.58,
+        "buyerFirstName": "Marie",
+        "buyerLastName": "Williamson"
+      },
+      {
+        "name": "Stila Hydrating Primer Oil-Free SPF 30",
+        "price": 179.28,
         "buyerFirstName": "Marie",
         "buyerLastName": "Williamson"
       },
@@ -3670,8 +3670,8 @@
         "buyerLastName": "Williamson"
       },
       {
-        "name": "Yellow Jacket hymenoptera venom Venomil Diagnostic",
-        "price": 23.58,
+        "name": "AIR",
+        "price": 581.69,
         "buyerFirstName": "Marie",
         "buyerLastName": "Williamson"
       }
@@ -3702,14 +3702,14 @@
     "age": 26,
     "soldProducts": [
       {
-        "name": "equaline",
-        "price": 520.45,
+        "name": "Acetaminophen, Chlorpheniramine Maleate, Dextromethorphan Hydrobromide, Phenylephrine Hydrochloride",
+        "price": 1028.27,
         "buyerFirstName": "Wanda",
         "buyerLastName": "Harris"
       },
       {
-        "name": "Acetaminophen, Chlorpheniramine Maleate, Dextromethorphan Hydrobromide, Phenylephrine Hydrochloride",
-        "price": 1028.27,
+        "name": "equaline",
+        "price": 520.45,
         "buyerFirstName": "Wanda",
         "buyerLastName": "Harris"
       }

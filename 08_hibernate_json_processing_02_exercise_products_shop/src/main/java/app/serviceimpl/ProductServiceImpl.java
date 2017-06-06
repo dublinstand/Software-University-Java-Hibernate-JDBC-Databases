@@ -67,7 +67,7 @@ public class ProductServiceImpl implements ProductService{
         return product;
     }
 
-    private ProductDto convertToDto(Product product){
+    public ProductDto convertToDto(Product product){
         ProductDto productDto = new ProductDto();
         productDto.setName(product.getName());
         productDto.setPrice(product.getPrice());
