@@ -71,9 +71,15 @@ public class UserServiceImpl implements UserService{
         for (Product product : products) {
             ProductDto productDto = this.productServiceImpl.convertToDto(product);
 
-            //adding buyers first and last name
-            productDto.setBuyerFirstName(product.getBuyer().getFirstName());
-            productDto.setBuyerLastName(product.getBuyer().getLastName());
+            if (product.getBuyer() != null ){
+                //adding buyers first and last name
+                productDto.setBuyerFirstName(product.getBuyer().getFirstName());
+                productDto.setBuyerLastName(product.getBuyer().getLastName());
+            }
+            else {
+                continue;
+            }
+
             productDtos.add(productDto);
         }
 

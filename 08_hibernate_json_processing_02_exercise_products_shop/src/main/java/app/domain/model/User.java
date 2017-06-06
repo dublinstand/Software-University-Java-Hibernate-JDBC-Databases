@@ -23,10 +23,10 @@ public class User {
     @Column(name = "age")
     private Integer age;
 
-    @OneToMany(mappedBy = "seller", targetEntity = Product.class)
-    private Set<Product> boughtProducts;
-
     @OneToMany(mappedBy = "buyer", targetEntity = Product.class)
+    private Set<Product> productsBought;
+
+    @OneToMany(mappedBy = "seller", targetEntity = Product.class)
     private Set<Product> productsSold;
 
     @ManyToMany
@@ -36,7 +36,7 @@ public class User {
     private Set<User> friends;
 
     public User() {
-        this.setBoughtProducts(new HashSet<>());
+        this.setProductsBought(new HashSet<>());
         this.setProductsSold(new HashSet<>());
         this.setFriends(new HashSet<>());
     }
@@ -77,12 +77,12 @@ public class User {
         this.age = age;
     }
 
-    public Set<Product> getBoughtProducts() {
-        return boughtProducts;
+    public Set<Product> getProductsBought() {
+        return productsBought;
     }
 
-    public void setBoughtProducts(Set<Product> boughtProducts) {
-        this.boughtProducts = boughtProducts;
+    public void setProductsBought(Set<Product> productsBought) {
+        this.productsBought = productsBought;
     }
 
     public Set<Product> getProductsSold() {
