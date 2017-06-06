@@ -5,7 +5,7 @@ import app.domain.dto.ProductDto;
 import app.domain.dto.UserDto;
 import app.domain.model.Product;
 import app.domain.model.User;
-import app.ip.JSONParser;
+import app.io.JSONParser;
 import app.service.CategoryService;
 import app.service.ProductService;
 import app.service.UserService;
