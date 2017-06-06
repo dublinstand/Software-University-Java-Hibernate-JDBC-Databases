@@ -11,7 +11,5 @@ public interface UserService {
 
     List<User> findAll();
 
-    List<UserDto> findUserWithSoldProducts();
-
-
+    List<UserDto> findUserWithSoldProductsChangeToDto();
 }

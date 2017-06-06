@@ -30,7 +30,7 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public List<UserDto> findUserWithSoldProducts() {
+    public List<UserDto> findUserWithSoldProductsChangeToDto() {
         List<UserDto> userDtos = new ArrayList<>();
 
         List<User> users = this.userRepository.findUserWithSoldProducts();
@@ -57,7 +57,7 @@ public class UserServiceImpl implements UserService{
         userDto.setFirstName(user.getFirstName());
         userDto.setLastName(user.getLastName());
         userDto.setAge(user.getAge());
-        
+
         return userDto;
     }
 }

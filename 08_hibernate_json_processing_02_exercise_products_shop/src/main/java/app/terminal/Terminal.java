@@ -34,16 +34,19 @@ public class Terminal implements CommandLineRunner{
 
     @Override
     public void run(String... strings) throws Exception {
-//        seedUsersFromJsonFile();
+//        this.seedUsersFromJsonFile();
 //
 //        List<User> users = this.userService.findAll();
-//        seedProductsFromJsonFileAndUseRandomUser(users);
+//        this.seedProductsFromJsonFileAndUseRandomUser(users);
 //
 //        List<Product> products = this.productService.findAll();
-//        seedCategoriesFromJsonFileAndUseRandomCategory(products);
+//        this.seedCategoriesFromJsonFileAndUseRandomCategory(products);
 
-        List<ProductDto> productsInRange = this.productService.getProductsBetween500And1000WithNoBuyer();
-        WriteManyProductsToJson(productsInRange);
+//        List<ProductDto> productsInRange = this.productService.getProductsBetween500And1000WithNoBuyer();
+//        this.writeManyProductsToJson(productsInRange);
+
+        List<UserDto> usersWithSoldProducts = this.userService.findUserWithSoldProductsChangeToDto();
+        this.writeUsersToJson(usersWithSoldProducts);
     }
 
     private void seedUsersFromJsonFile(){
@@ -99,9 +102,17 @@ public class Terminal implements CommandLineRunner{
         }
     }
 
-    private void WriteManyProductsToJson(List<ProductDto> productDtos){
+    private void writeManyProductsToJson(List<ProductDto> productDtos){
         try {
             this.jsonParser.write(productDtos, "src/main/resources/files/output/json/products.json");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void writeUsersToJson(List<UserDto> userDtos){
+        try {
+            this.jsonParser.write(userDtos, "src/main/resources/files/output/json/users.json");
         } catch (IOException e) {
             e.printStackTrace();
         }
