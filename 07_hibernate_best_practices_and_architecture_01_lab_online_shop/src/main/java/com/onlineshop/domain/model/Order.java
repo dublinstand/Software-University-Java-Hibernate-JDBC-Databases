@@ -17,7 +17,7 @@ public class Order implements Serializable{
     @Column(name = "order_date")
     private Date orderDate;
 
-    @OneToMany(mappedBy = "id", targetEntity = LineItem.class, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "order", targetEntity = LineItem.class, cascade = CascadeType.ALL)
     private List<LineItem> lineItems;
 
     //using @Transient the data won't be persisted in the database

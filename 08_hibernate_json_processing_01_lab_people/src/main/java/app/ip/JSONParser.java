@@ -17,8 +17,6 @@ public class JSONParser {
     @Autowired
     private FileIO fileIO;
 
-    public static JSONParser jsonParser;
-
     //here we set our gson to exclude fields in our entities that don't have @Expose annotation
     //have pretty printing and create it
     public JSONParser() {
@@ -31,6 +29,8 @@ public class JSONParser {
     //<T> write (T object, String fileName) - means it takes and returns generic object
     //also we pass the path to the file we will write
     public <T> void write(T object, String fileName) throws IOException {
+        //creating a string of Json from the object we pass
+        //the object is generic
         String content = this.gson.toJson(object);
         //our files will be in resources/files/input or in resources/files/output
         this.fileIO.write(content, fileName);
@@ -43,10 +43,12 @@ public class JSONParser {
         T object = null;
 
         //read the content from a file, all exception go into the method
+        //get the Json String from the file
         String content = this.fileIO.read(fileName);
 
         //we pass the content and the class type
-        object = gson.fromJson(content, clazz);
+        //create the object from the class we pass and the Json content from the file we read
+        object = this.gson.fromJson(content, clazz);
 
         //return the object
         return object;

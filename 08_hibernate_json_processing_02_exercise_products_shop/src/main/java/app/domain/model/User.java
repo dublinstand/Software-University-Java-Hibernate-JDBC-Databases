@@ -12,7 +12,6 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
     private Long id;
 
     @Column(name = "first_name")
@@ -24,10 +23,10 @@ public class User {
     @Column(name = "age")
     private Integer age;
 
-    @OneToMany(mappedBy = "id", targetEntity = Product.class, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "seller", targetEntity = Product.class)
     private Set<Product> boughtProducts;
 
-    @OneToMany(mappedBy = "id", targetEntity = Product.class, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "buyer", targetEntity = Product.class)
     private Set<Product> productsSold;
 
     @ManyToMany
