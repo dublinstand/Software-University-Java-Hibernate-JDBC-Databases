@@ -22,4 +22,8 @@ public class AddTagCommand extends Command {
         tagService.create(tag);
         return tagName + " was added successfully to database";
     }
+
+    public void setTagService(TagService tagService) {
+        this.tagService = tagService;
+    }
 }
