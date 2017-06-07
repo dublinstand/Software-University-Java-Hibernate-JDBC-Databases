@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 import java.io.*;
 
 @Component
@@ -14,7 +15,7 @@ public class XMLParser {
     private JAXBContext jaxbContext;
 
     public <T> void write(T object, String fileName) throws JAXBException, IOException {
-        //we initialize jaxbContext
+        //we initialize jaxbContext and pass the class of the object
         this.jaxbContext = JAXBContext.newInstance(object.getClass());
 
         try (
@@ -31,8 +32,26 @@ public class XMLParser {
         }
     }
 
-    public <T> T read(Class<T> tClass, String fileName){
+    public <T> T read(Class<T> tClass, String fileName) throws JAXBException, IOException {
 
-        return null;
+        T object = null;
+
+        //we initialize jaxbContext and pass the class from the method
+        this.jaxbContext = JAXBContext.newInstance(tClass);
+
+        try (
+                //when we read from a file we can use this.getClass() - it will get us to the resources folder
+                //now for a file we can pass - /files/input/xml/person.xml
+                InputStream inputStream = this.getClass().getResourceAsStream(fileName);
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+        ) {
+            //here we use Unmarshaller library
+            Unmarshaller unmarshaller = this.jaxbContext.createUnmarshaller();
+
+            //here we create our object from the file xml
+            object = (T) unmarshaller.unmarshal(bufferedReader);
+        }
+
+        return object;
     }
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons>
+    <person>
+        <first_name>Lyudmil</first_name>
+        <address country="Ukraine">
+            <city>Odessa</city>
+        </address>
+        <phone_numbers>
+            <phone_number>
+                <number>011111111</number>
+            </phone_number>
+            <phone_number>
+                <number>022222222</number>
+            </phone_number>
+        </phone_numbers>
+    </person>
+    <person>
+        <first_name>John</first_name>
+        <address country="Ireland">
+            <city>Cork</city>
+        </address>
+        <phone_numbers>
+            <phone_number>
+                <number>033333333</number>
+            </phone_number>
+            <phone_number>
+                <number>044444444</number>
+            </phone_number>
+        </phone_numbers>
+    </person>
+</persons>

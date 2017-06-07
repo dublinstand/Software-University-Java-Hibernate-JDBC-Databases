@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <person>
-    <first_name>Donyo</first_name>
+    <first_name>George</first_name>
     <address country="Bulgaria">
-        <city>Haskovo</city>
+        <city>Sofia</city>
     </address>
     <phone_numbers>
         <phone_number>
-            <number>088888888</number>
+            <number>07777777</number>
         </phone_number>
         <phone_number>
-            <number>088997766</number>
+            <number>066666666</number>
         </phone_number>
     </phone_numbers>
 </person>

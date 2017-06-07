@@ -2,28 +2,30 @@ package app.domain.dto;
 
 import com.google.gson.annotations.Expose;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-//this annotation is for XML
-@XmlRootElement
+
+//this is the root of our xml structure and we give the name = person
+@XmlRootElement(name = "person")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class PersonDto implements Serializable{
 
-    @XmlElement
+    @XmlElement(name = "first_name")
     @Expose
     private String firstName;
 
-    @XmlElement
+    @XmlElement(name = "address")
     @Expose
     private AddressDto address;
 
-    @XmlElement
+    //because we have a Set of PhoneNumberDto we use the annotation @XmlElementWrapper to say it is an array
+    @XmlElementWrapper(name = "phone_numbers")
+    //in order to use @XmlElement we need to use @XmlElement(name = "phone_number")
+    //the name value should be equal to the value of the root in PhoneNumberDto - @XmlRootElement(name = "phone_number")
+    @XmlElement(name = "phone_number")
     @Expose
     private Set<PhoneNumberDto> phoneNumbers;
 

@@ -5,8 +5,8 @@ import com.google.gson.annotations.Expose;
 import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 
-//this annotation is for XML
-@XmlRootElement
+
+@XmlRootElement(name = "phone_number")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class PhoneNumberDto implements Serializable{
 
@@ -14,7 +14,7 @@ public class PhoneNumberDto implements Serializable{
     @Expose
     private String number;
 
-    //to miss the file
+    //to miss the file as part of the XML - not to have StackOverflow error
     @XmlTransient
     //After we run the MainApplication.class we get an error - java.lang.StackOverflowError: null.
     // This is because one person can have a lot of phone numbers and one phone number belongs to a person and we get Stack overflow.

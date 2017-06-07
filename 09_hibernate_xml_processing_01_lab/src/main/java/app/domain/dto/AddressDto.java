@@ -2,18 +2,15 @@ package app.domain.dto;
 
 import com.google.gson.annotations.Expose;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 
-//this annotation is for XML
-@XmlRootElement
+
+@XmlRootElement(name = "address")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class AddressDto implements Serializable{
 
-    @XmlElement
+    @XmlAttribute(name = "country")
     @Expose
     private String country;
 

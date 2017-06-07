@@ -2,8 +2,8 @@ package app.terminal;
 
 import app.domain.dto.AddressDto;
 import app.domain.dto.PersonDto;
+import app.domain.dto.PersonsDto;
 import app.domain.dto.PhoneNumberDto;
-import app.io.JSONParser;
 import app.io.XMLParser;
 import app.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,64 +22,19 @@ public class Terminal implements CommandLineRunner {
     private PersonService personService;
 
     @Autowired
-    private JSONParser jsonParser;
-
-    @Autowired
     private XMLParser xmlParser;
 
     @Override
     public void run(String... strings) throws Exception {
-        this.writeSingleObjectToJson();
-        this.writeSingleObjectsToXml();
-//        this.writeManyObjectsToJson();
-//        this.readSingleObjectFromJson();
-//        this.readMultipleObjectsFromJson();
-    }
+//        this.writeSingleObjectsToXml();
+//        this.writeManyObjectsToXml();
 
-    //we will be saving here DTOs
-    private void writeSingleObjectToJson(){
-        PersonDto personDto = this.seedData();
-
-        try {
-            //measure the execution time
-            long startTime = System.currentTimeMillis();
-
-            this.jsonParser.write(personDto, "src/main/resources/files/output/json/person.json");
-
-            long endTime = System.currentTimeMillis();
-            double result = endTime - startTime;
-
-            System.out.println("JSON time: " + result);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    //write many objects
-    private void writeManyObjectsToJson(){
-
-        //we need to create a list of PersonDto and then add all objects to it
-        List<PersonDto> personDtoList = new ArrayList<>();
-
-        PersonDto personDto = this.seedData();
-        PersonDto personDto2 = this.seedData();
-        PersonDto personDto3 = this.seedData();
-
-        personDtoList.add(personDto);
-        personDtoList.add(personDto2);
-        personDtoList.add(personDto3);
-
-        try {
-            //here we pass the list of objects, we can not pass personDtoList.class
-            this.jsonParser.write(personDtoList, "src/main/resources/files/output/json/persons.json");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        this.readSingleObjectFromXML();
+        this.readMultipleObjectFromXML();
     }
 
     //create the data
-    private PersonDto seedData(){
+    private PersonDto seedData() {
         PersonDto personDto = new PersonDto();
         personDto.setFirstName("Donyo");
 
@@ -89,64 +44,90 @@ public class Terminal implements CommandLineRunner {
 
         personDto.setAddress(addressDto);
 
-        PhoneNumberDto phoneNumberDto = new PhoneNumberDto();
-        phoneNumberDto.setNumber("088888888");
-        phoneNumberDto.setPerson(personDto);
+        PhoneNumberDto phoneNumberDto1 = new PhoneNumberDto();
+        phoneNumberDto1.setNumber("088888888");
+        phoneNumberDto1.setPerson(personDto);
 
-        personDto.getPhoneNumbers().add(phoneNumberDto);
+        PhoneNumberDto phoneNumberDto2 = new PhoneNumberDto();
+        phoneNumberDto2.setNumber("088997766");
+        phoneNumberDto2.setPerson(personDto);
+
+        personDto.getPhoneNumbers().add(phoneNumberDto1);
+        personDto.getPhoneNumbers().add(phoneNumberDto2);
 
         return personDto;
     }
 
-
-    //all exceptions are handled in the Terminal or at the frontend, so that the user can see the errors
-    //read single object from Json file and store it in the database
-    private void readSingleObjectFromJson(){
-        try {
-            //we can get the personDto from the parser
-            //in the read method we pass the class we use - PersonDto
-            PersonDto personDto = this.jsonParser.read(PersonDto.class, "src/main/resources/files/input/json/person.json");
-
-            //now we can call our service and save the DTO object in the database
-            //the service will take the DTO change it into an Entity and store it in the database
-            this.personService.create(personDto);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    //read from an array of DTO objects and save it in the database
-    private void readMultipleObjectsFromJson(){
-
-        //here we pass an array as class - PersonDto[].class
-        try {
-            PersonDto[] personDtos = this.jsonParser.read(PersonDto[].class, "src/main/resources/files/input/json/persons.json");
-
-            //create all persons
-            for (PersonDto personDto : personDtos) {
-                this.personService.create(personDto);
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void writeSingleObjectsToXml(){
+    //write single object to xml file
+    private void writeSingleObjectsToXml() {
 
         PersonDto personDto = this.seedData();
 
         try {
-            //here we can record how much it took to create the xml file
-            long startTime = System.currentTimeMillis();
-
             this.xmlParser.write(personDto, "src/main/resources/files/output/xml/person.xml");
 
-            long endTime = System.currentTimeMillis();
-            double result = endTime - startTime;
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-            System.out.println("XML time: " + result);
+    //write many objects to xml file
+    private void writeManyObjectsToXml() {
+
+        PersonDto personDto = this.seedData();
+        PersonDto personDto2 = this.seedData();
+
+        //initialize the list and add the two persons
+        List<PersonDto> personDtos = new ArrayList();
+        personDtos.add(personDto);
+        personDtos.add(personDto2);
+
+        //here we create our PersonsDto list which is annotated and in it we set the list of PersonDto that we have set
+        PersonsDto personsDto = new PersonsDto();
+        personsDto.setPersonDtos(personDtos);
+
+        try {
+            this.xmlParser.write(personsDto, "src/main/resources/files/output/xml/persons.xml");
+
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //read an object from XML file and store it into the database
+    private void readSingleObjectFromXML(){
+        try {
+            //here we get our PersonDto from the file
+            PersonDto personDto = this.xmlParser.read(PersonDto.class, "/files/input/xml/person.xml");
+
+            //save it in the database
+            this.personService.create(personDto);
+
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //read an multiple objects from XML file and store it into the database
+    private void readMultipleObjectFromXML(){
+        try {
+            //here we get our PersonsDto from the file
+            PersonsDto personsDto = this.xmlParser.read(PersonsDto.class, "/files/input/xml/persons.xml");
+
+            //because PersonsDto has a collection of PersonDto in it we need to create a List<PersonDto> from the PersonsDto and iterate it
+            List<PersonDto> personDtos = personsDto.getPersonDtos();
+
+            //we need to iterate it now
+            for (PersonDto personDto : personDtos) {
+                //save each object in the database
+                this.personService.create(personDto);
+            }
 
         } catch (JAXBException e) {
             e.printStackTrace();
