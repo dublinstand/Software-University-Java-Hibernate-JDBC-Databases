@@ -32,6 +32,7 @@ public class AddTagCommandTest2 {
         this.data = new String[]{"AddTag", "#verynicetag"};
 
         //addTagCommand is created by @InjectMocks, we pass the Service that we will test
+        //because we use @Mock for our tagService, and we pass it in addTagCommand, no data will be saved in the database
         this.addTagCommand.setTagService(this.tagService);
 
         //we need to set the data in addTagCommand
