@@ -20,24 +20,32 @@ public class PlaneAirConditioner extends VehicleAirConditioner {
     }
 
     public int getElectricityUsed() {
-        return electricityUsed;
+        return this.electricityUsed;
     }
 
     public void setElectricityUsed(int electricityUsed) {
         if(electricityUsed <= 0){
             throw new IllegalArgumentException("Electricity used must be a positive integer.");
         }
+
         this.electricityUsed = electricityUsed;
     }
 
     @Override
-    protected boolean isEfficient() {
+    public boolean isEfficient() {
         boolean isEfficient = false;
-
-        if(this.getElectricityUsed()/Math.sqrt(super.getVolumeCovered()) < 150 ){
+        if(this.getElectricityUsed()/Math.sqrt(super.getVolumeCovered()) < 150){
             isEfficient = true;
         }
 
         return isEfficient;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(super.toString()).append(System.lineSeparator());
+        stringBuilder.append("Electricity Used : " + this.getElectricityUsed());
+        return stringBuilder.toString();
     }
 }

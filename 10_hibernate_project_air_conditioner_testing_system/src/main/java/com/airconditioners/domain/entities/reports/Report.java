@@ -28,8 +28,16 @@ public class Report {
         this.setBasicAirConditioner(basicAirConditioner);
     }
 
+    public long getId() {
+        return this.id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public Mark getMark() {
-        return mark;
+        return this.mark;
     }
 
     public void setMark(Mark mark) {
@@ -37,10 +45,21 @@ public class Report {
     }
 
     public BasicAirConditioner getBasicAirConditioner() {
-        return basicAirConditioner;
+        return this.basicAirConditioner;
     }
 
     public void setBasicAirConditioner(BasicAirConditioner basicAirConditioner) {
         this.basicAirConditioner = basicAirConditioner;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Manufacturer: " + this.getBasicAirConditioner().getManufacturer())
+                .append(System.lineSeparator());
+        stringBuilder.append("Model: " + this.getBasicAirConditioner().getModel())
+                .append(System.lineSeparator());;
+        stringBuilder.append("Mark: " + this.getMark());
+        return stringBuilder.toString();
     }
 }

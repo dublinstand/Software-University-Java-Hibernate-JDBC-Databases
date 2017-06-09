@@ -4,7 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "vehicle_air_conditioner")
+@Table(name = "car_air_conditioner")
 public class CarAirConditioner extends VehicleAirConditioner {
 
     public CarAirConditioner() {
@@ -15,13 +15,19 @@ public class CarAirConditioner extends VehicleAirConditioner {
     }
 
     @Override
-    protected boolean isEfficient() {
-        boolean isEfficient = true;
-
-        if (Math.sqrt(super.getVolumeCovered()) < 3){
-            isEfficient = false;
+    public boolean isEfficient() {
+        boolean isEffiecient = true;
+        if(Math.sqrt(super.getVolumeCovered()) < 3){
+            isEffiecient = false;
         }
 
-        return isEfficient;
+        return isEffiecient;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(super.toString()).append(System.lineSeparator());
+        return stringBuilder.toString();
     }
 }

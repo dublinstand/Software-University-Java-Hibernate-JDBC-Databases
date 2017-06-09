@@ -1,5 +1,6 @@
 package com.airconditioners.domain.entities.airConditioners;
 
+
 import com.airconditioners.domain.enums.EfficiencyRating;
 
 import javax.persistence.*;
@@ -24,22 +25,23 @@ public class StationaryAirConditioner extends BasicAirConditioner {
         super(manufacturer, model);
         this.setPowerUsage(powerUsage);
         this.setRequiredEfficiencyRating(requiredEfficiencyRating);
-        this.setRealEfficiencyRating(this.calculateEfficiencyRating(powerUsage));
+        this.setRealEfficiencyRating(this.calculateEffieciencyRating(powerUsage));
     }
 
     public int getPowerUsage() {
-        return powerUsage;
+        return this.powerUsage;
     }
 
     public void setPowerUsage(int powerUsage) {
         if(powerUsage <= 0){
-            throw new IllegalArgumentException("Power Usage must be a positive integer.");
+            throw new IllegalArgumentException("Power usage used must be a positive integer.");
         }
+
         this.powerUsage = powerUsage;
     }
 
     public EfficiencyRating getRequiredEfficiencyRating() {
-        return requiredEfficiencyRating;
+        return this.requiredEfficiencyRating;
     }
 
     public void setRequiredEfficiencyRating(EfficiencyRating requiredEfficiencyRating) {
@@ -47,22 +49,22 @@ public class StationaryAirConditioner extends BasicAirConditioner {
     }
 
     public EfficiencyRating getRealEfficiencyRating() {
-        return realEfficiencyRating;
+        return this.realEfficiencyRating;
     }
 
     public void setRealEfficiencyRating(EfficiencyRating realEfficiencyRating) {
         this.realEfficiencyRating = realEfficiencyRating;
     }
 
-    private EfficiencyRating calculateEfficiencyRating(int powerUsage) {
+    private EfficiencyRating calculateEffieciencyRating(int powerUsage){
         EfficiencyRating efficiencyRating;
-        if (powerUsage < 1000) {
+        if(powerUsage < 1000){
             efficiencyRating = EfficiencyRating.A;
-        } else if (powerUsage <= 1250) {
+        } else if(powerUsage <=1250){
             efficiencyRating = EfficiencyRating.B;
-        } else if (powerUsage <= 1500) {
+        } else if(powerUsage <=1500){
             efficiencyRating = EfficiencyRating.C;
-        } else if (powerUsage <= 2000) {
+        }  else if(powerUsage <=2000){
             efficiencyRating = EfficiencyRating.D;
         } else {
             efficiencyRating = EfficiencyRating.E;
@@ -72,14 +74,21 @@ public class StationaryAirConditioner extends BasicAirConditioner {
     }
 
     @Override
-    protected boolean isEfficient() {
-        boolean isEfficient = false;
-
-        //with ordinal we get the order
-        if(this.getRealEfficiencyRating().ordinal() >= this.getRealEfficiencyRating().ordinal()){
-            isEfficient = true;
+    public boolean isEfficient() {
+        boolean isEffiecient = false;
+        if(this.getRealEfficiencyRating().ordinal() <= this.getRequiredEfficiencyRating().ordinal()){
+            isEffiecient = true;
         }
 
-        return false;
+        return isEffiecient;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(super.toString()).append(System.lineSeparator());
+        stringBuilder.append("Required Efficiency Rating : " + this.getRequiredEfficiencyRating());
+        stringBuilder.append("Power Usage(KW / h): " + this.getPowerUsage());
+        return stringBuilder.toString();
     }
 }

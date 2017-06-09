@@ -4,7 +4,6 @@ import com.airconditioners.domain.entities.reports.Report;
 
 import javax.persistence.*;
 
-//we'll store all data in one table from the different conditioners
 @Entity
 @Table(name = "basic_air_conditioners")
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -26,15 +25,22 @@ public abstract class BasicAirConditioner {
     public BasicAirConditioner() {
     }
 
-    //we need to call this() for the reports - another entity
     public BasicAirConditioner(String manufacturer, String model) {
         this();
         this.setManufacturer(manufacturer);
         this.setModel(model);
     }
 
+    public long getId() {
+        return this.id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public String getManufacturer() {
-        return manufacturer;
+        return this.manufacturer;
     }
 
     public void setManufacturer(String manufacturer) {
@@ -46,18 +52,23 @@ public abstract class BasicAirConditioner {
     }
 
     public String getModel() {
-        return model;
+        return this.model;
     }
 
     public void setModel(String model) {
-        if (model.length() < 2) {
-            throw new IllegalArgumentException("Models's length must be at least 4 symbols long.");
+        if(model.length() < 2){
+            throw new IllegalArgumentException("Model's name must be at least 2 symbols long.");
         }
-
         this.model = model;
     }
 
-    //we want the classes that extend BasicAirConditioner to override this method because they will have different methods
-    //to check if it is efficient
-    protected abstract boolean isEfficient();
+    public abstract boolean isEfficient();
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Model: " + this.getModel()).append(System.lineSeparator());
+        stringBuilder.append("Manufacturer: " + this.getManufacturer());
+        return stringBuilder.toString();
+    }
 }
