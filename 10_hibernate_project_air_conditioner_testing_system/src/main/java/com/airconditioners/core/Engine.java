@@ -25,15 +25,23 @@ public class Engine implements CommandLineRunner {
         while(true){
             //we read the line and split by empty spaces
             //this is the command -	RegisterStationaryAirConditioner (<manufacturer>,<model>,<energyEfficiencyRating>,<powerUsage>)
-            String[] items = reader.read().split("//s+");
+            String[] items = reader.read().split("\\s+");
             String commandName = items[0];
 
             //this is the second part of the item we read and we remove the brackets () -(<manufacturer>,<model>,<energyEfficiencyRating>,<powerUsage>)
             //in the end we split them by comma and have the commands
-            String[] tokens = items[1].replace("(","").replace("}","").split(",");
+            String[] tokens = items[1].replace("(","").replace(")","").split(",");
 
-            //commandDispatcher.dispatchCommand will return Command and we can get access to Command.execute() that returns string
-            String output = this.commandDispatcher.dispatchCommand(commandName, tokens).execute();
+            //if there is an exception we catch it
+            try {
+                //commandDispatcher.dispatchCommand will return Command and we can get access to Command.execute() that returns string
+                String output = this.commandDispatcher.dispatchCommand(commandName, tokens).execute();
+                //we print the message
+                writer.write(output);
+            }
+            catch (RuntimeException ex){
+                writer.write(ex.getMessage());
+            }
         }
     }
 }

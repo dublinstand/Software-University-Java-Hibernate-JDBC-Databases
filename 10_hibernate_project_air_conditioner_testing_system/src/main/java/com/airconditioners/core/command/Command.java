@@ -8,6 +8,13 @@ public abstract class Command {
         this.tokens = tokens;
     }
 
-    public abstract String execute();
+    protected String[] getTokens() {
+        return tokens;
+    }
 
+    protected void setTokens(String[] tokens) {
+        this.tokens = tokens;
+    }
+
+    public abstract String execute();
 }
