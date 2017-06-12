@@ -30,7 +30,7 @@ public class CommandDispatcher {
     @Autowired
     private ReportRepository reportRepository;
 
-    Command dispatchCommand(String name, String[] tokens) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+    public Command dispatchCommand(String name, String[] tokens) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         //we get the whole path of the command class
         String commandFullPath = PACKAGE + name + SUFFIX;
 

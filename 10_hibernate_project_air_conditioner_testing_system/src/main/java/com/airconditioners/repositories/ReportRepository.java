@@ -6,6 +6,8 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface ReportRepository extends CrudRepository<Report, Long>{
 
@@ -18,4 +20,15 @@ public interface ReportRepository extends CrudRepository<Report, Long>{
             "WHERE a.model = :model " +
             "AND a.manufacturer = :manufacturer")
     int countByModelAndManufacturer(@Param(value = "model") String model, @Param(value = "manufacturer") String manufacturer);
+
+    @Query(value = "SELECT r FROM Report as r " +
+            "JOIN r.basicAirConditioner AS a " +
+            "WHERE a.model = :model " +
+            "AND a.manufacturer = :manufacturer")
+    Report findOneByModelAndManufacturer(@Param(value = "model") String model, @Param(value = "manufacturer") String manufacturer);
+
+    @Query(value = "SELECT r FROM Report as r " +
+            "JOIN r.basicAirConditioner AS a " +
+            "WHERE a.manufacturer = :manufacturer")
+    List<Report> findAllByManufacturer(@Param(value = "manufacturer") String manufacturer);
 }

@@ -1,0 +1,5 @@
+com\mappingobjects\MainApplication.class
+com\mappingobjects\domain\entity\Employee.class
+com\mappingobjects\domain\entity\Address.class
+com\mappingobjects\terminal\Terminal.class
+com\mappingobjects\domain\dto\EmployeeDto.class

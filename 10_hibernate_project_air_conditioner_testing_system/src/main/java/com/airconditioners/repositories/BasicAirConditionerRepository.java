@@ -1,6 +1,7 @@
 package com.airconditioners.repositories;
 
 import com.airconditioners.domain.entities.airConditioners.BasicAirConditioner;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -12,4 +13,9 @@ public interface BasicAirConditionerRepository extends CrudRepository<BasicAirCo
 
     //for the Report we need to get the air conditioner by model and manufacture
     BasicAirConditioner findOneByModelAndManufacturer(String model, String manufacturer);
+
+    @Query(value = "SELECT SUM(CASE WHEN r.id IS NOT NULL THEN 1.00 ELSE 0.00 END)/COUNT(a)*100 " +
+            "FROM BasicAirConditioner AS a " +
+            "LEFT JOIN a.report AS r")
+    double findTestedAirConditioners();
 }

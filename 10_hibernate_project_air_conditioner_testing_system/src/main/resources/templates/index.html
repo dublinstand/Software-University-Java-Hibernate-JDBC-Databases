@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{/conditioner}" th:object="${commandDto}" th:method="POST">
+    <p>Command: <input type="text" th:field="*{commandName}"/></p>
+    <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
+</form>
+</body>
+</html>
