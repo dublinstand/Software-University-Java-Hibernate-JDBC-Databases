@@ -1,16 +1,20 @@
 package com.mappingobjects.terminal;
 
 import com.mappingobjects.domain.dto.EmployeeDto;
+import com.mappingobjects.domain.dto.EmployeeWithManagerDto;
 import com.mappingobjects.domain.dto.ManagerDto;
 import com.mappingobjects.domain.entity.Employee;
+import com.mappingobjects.io.Writer;
 import com.mappingobjects.parsers.ModelParser;
 import com.mappingobjects.service.EmployeeService;
 import org.modelmapper.PropertyMap;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Component
 public class Terminal implements CommandLineRunner {
@@ -21,10 +25,20 @@ public class Terminal implements CommandLineRunner {
     @Autowired
     private ModelParser modelParser;
 
+    @Autowired
+    @Qualifier(value = "ConsoleWriter")
+    private Writer consoleWriter;
+
+    @Autowired
+    @Qualifier(value = "JsonWriter")
+    private Writer jsonWriter;
+
     @Override
     public void run(String... strings) throws Exception {
         this.convertEmployeeToEmployeeDto();
         this.convertEmployeeToManagerDto();
+        this.createEmployee();
+        this.printEmployeesDtoBefore1980();
     }
 
     private void convertEmployeeToEmployeeDto() {
@@ -81,5 +95,14 @@ public class Terminal implements CommandLineRunner {
 
         //in our service implementation we accept DTO, then convert it to entity and then store it
         this.employeeService.create(employeeDto);
+    }
+
+    private void printEmployeesDtoBefore1980(){
+        List<EmployeeWithManagerDto> employeeWithManagerDtos =
+                this.employeeService.findAllBefore1980();
+
+        for (EmployeeWithManagerDto employeeWithManagerDto : employeeWithManagerDtos) {
+            this.consoleWriter.write(employeeWithManagerDto.toString());
+        }
     }
 }

@@ -1,6 +1,7 @@
 package com.mappingobjects.serviceImpl;
 
 import com.mappingobjects.domain.dto.EmployeeDto;
+import com.mappingobjects.domain.dto.EmployeeWithManagerDto;
 import com.mappingobjects.domain.entity.Employee;
 import com.mappingobjects.parsers.ModelParser;
 import com.mappingobjects.repository.EmployeeRepository;
@@ -30,6 +31,13 @@ public class EmployeeServiceImpl implements EmployeeService{
     public List<EmployeeDto> findByName(String name) {
         List<Employee> employees = employeeRepository.findByFirstName(name);
         List<EmployeeDto> employeeDtos = this.modelParser.convert(employees, EmployeeDto.class);
+        return employeeDtos;
+    }
+
+    @Override
+    public List<EmployeeWithManagerDto> findAllBefore1980() {
+        List<Employee> employees = employeeRepository.findAllBefore1980();
+        List<EmployeeWithManagerDto> employeeDtos = this.modelParser.convert(employees, EmployeeWithManagerDto.class);
         return employeeDtos;
     }
 }

@@ -2,6 +2,7 @@ package com.mappingobjects.domain.entity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -16,11 +17,15 @@ public class Employee {
     @Column(name = "first_name")
     private String firstName;
 
+    
     @Column(name = "last_name")
     private String lastName;
 
     @Column(name = "salary")
     private BigDecimal salary;
+
+    @Column(name = "birthday")
+    private Date birthday;
 
     @Basic
     private String address;
@@ -91,6 +96,14 @@ public class Employee {
 
     public void setManagerEmployees(Set<Employee> managerEmployees) {
         this.managerEmployees = managerEmployees;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
 
     public void addEmployee(Employee employee){
